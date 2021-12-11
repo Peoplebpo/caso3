@@ -63,6 +63,10 @@
                                 <th>EDAD</th>
                                 <th>EMAIL</th>
                                 <th>DIRECCION</th>
+                                <th id="id_u">CICLO FACTURACIÓN</th>
+                                <th id="id_u">FACTURACIÓN PENDIENTE</th>
+                                <th id="id_u">PERIODO FACTURACIÓN</th>
+                                <th id="id_u">COMPROMISO DE PAGO</th>
                                 <th style="text-align: center;">ACCIONES</th>
 
                             </tr>
@@ -114,7 +118,7 @@
 
         <!-- Modal -->
         <div class="modal fade" id="modalCRUD" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="AgregarProductos" aria-hidden="true">
-            <div class="modal-dialog">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
                 <div class="modal-content">
                 <div class="modal-header" style="background:#3c8dbc; color:white">
                     <h5 class="modal-title" id="AgregarProductos">Agregar Tipo Venta</h5>
@@ -123,6 +127,10 @@
                 <div class="modal-body">
 
                 <form id="formproductos">
+
+                <div class="row">
+
+                  <div class="col-lg-6">
 
                     <div class="form-group">
                 
@@ -135,8 +143,12 @@
                         </div> 
 
                     </div>
+                    
+                  </div>
 
-                     <div class="form-group">
+                  <div class="col-lg-6">
+
+                    <div class="form-group">
                 
                         <div class="input-group">
                         
@@ -148,7 +160,16 @@
 
                     </div>
 
-                     <div class="form-group">
+                  </div>
+
+                </div>
+
+                <div class="row">
+
+                  <div class="col-lg-6">
+
+                  
+                    <div class="form-group">
                 
                         <div class="input-group">
                         
@@ -160,19 +181,31 @@
 
                     </div>
 
-                     <div class="form-group">
+                  </div>
+
+                  <div class="col-lg-6">
+
+                    <div class="form-group">
                 
                         <div class="input-group">
                         
                             <span class="input-group-text" id="basic-addon1"><i class="fas fa-pager"></i></span>
 
-                            <input type="text" class="form-control input-lg" placeholder="Ingresar Edad" id="edad" required>
+                            <input type="number" class="form-control input-lg" placeholder="Ingresar Edad" id="edad" required>
 
                         </div>
 
                     </div>
 
-                      <div class="form-group">
+                  </div>
+
+                </div>
+
+                <div class="row">
+
+                  <div class="col-lg-6">
+
+                    <div class="form-group">
                 
                         <div class="input-group">
                         
@@ -184,7 +217,11 @@
 
                     </div>
 
-                      <div class="form-group">
+                  </div>
+
+                  <div class="col-lg-6">
+
+                    <div class="form-group">
                 
                         <div class="input-group">
                         
@@ -196,10 +233,85 @@
 
                     </div>
 
-     
+                  </div>
+
+                </div>
+
+                <div class="row">
+
+                  <div class="col-lg-6">
+
+                    <div class="form-group">
+                
+                        <div class="input-group">
+                        
+                            <span class="input-group-text" id="basic-addon1"><i class="fas fa-cash-register"></i></span>
+
+                            <input type="text" class="form-control input-lg" placeholder="Ciclo Facturación" id="ciclo_fact" required>
+
+                        </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="col-lg-6">
+
+                    <div class="form-group">
+                
+                        <div class="input-group">
+                        
+                            <span class="input-group-text" id="basic-addon1"><i class="fas fa-dumpster"></i></span>
+
+                            <input type="text" class="form-control input-lg" placeholder="Facturación Pendiente" id="fact_pendiente" required>
+
+                        </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="row">
+
+                  <div class="col-lg-6">
+
+                    <div class="form-group">
+                
+                        <div class="input-group">
+                        
+                            <span class="input-group-text" id="basic-addon1"><i class="fas fa-dumpster-fire"></i></span>
+
+                            <input type="text" class="form-control input-lg" placeholder="Periodo Facturación" id="periodo_fact" required>
+
+                        </div>
+
+                    </div>
+                    
+                  </div>
+
+                  <div class="col-lg-6">
+
+                    <div class="form-group">
+                
+                        <div class="input-group">
+                        
+                            <span class="input-group-text" id="basic-addon1"><i class="fas fa-calendar-alt"></i></span>
+
+                            <input type="date" class="form-control input-lg" placeholder="Fecha Compromiso Pago" id="fecha_cpago" required>
+
+                        </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
                 </div>
                 <div class="modal-footer">
-                <button type="submit" id="btnguardar" class="btn btn-success">Guardar</button>
+                  <button type="submit" id="btnguardar" class="btn btn-success">Guardar</button>
                 </div>
     
                 </form>

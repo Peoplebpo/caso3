@@ -165,7 +165,7 @@ $(document).ready(function () {
 						text: 'Campos Obligatorios (Producto o Sub Producto y Cantidad)'
 					})
 	
-					return false;
+					return true;
 				}
 
 			if (

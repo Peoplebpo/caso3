@@ -126,6 +126,7 @@
           $_GET["ruta"]=="sucursal"||
           $_GET["ruta"]=="tipov"||
           $_GET["ruta"]=="clientes"||
+          $_GET["ruta"]=="canalpago"||
           $_GET["ruta"]=="inicio"
         
           

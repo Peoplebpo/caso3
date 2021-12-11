@@ -90,6 +90,24 @@ if (isset($_SESSION["user"])) {
                                         <label>Edad</label>
                                         <input min="0" oninput="validity.valid||(value='');" name="edad" type="number" id="edad" class="form-control my-2" value="" size="32"/>
 
+                                        <label>Ciclo de Facturación</label>
+                                        <input name="ciclo_fact" type="name" id="ciclo_fact" class="form-control my-2" value="" size="32"/>
+
+                                        <label>Canal de Pago</label>
+                                        <select name="producto" id="producto" class="form-select my-2">
+
+                                            <option value="0">Seleccione:</option>
+                                                <?php
+                                                    require('modelos/conexion/conexion_modal.php');
+                                                    $query3 = $mysqli3 -> query ("SELECT * FROM canal_pago;");
+                                                    while ($valores3 = mysqli_fetch_array($query3)) {
+                                                    echo '<option value="'.$valores3['nombre'].'">'.$valores3['nombre'].'</option>';
+                                                    }
+
+                                                ?>
+
+                                        </select>
+
                                         
                                         </div>
 
@@ -110,6 +128,9 @@ if (isset($_SESSION["user"])) {
                                             <option value="hombre">Hombre</option>
                                             <option value="mujer">Mujer</option>
                                         </select>
+
+                                        <label>Facturación Pendiente</label>
+                                        <input name="fact_pendiente" type="name" id="fact_pendiente" class="form-control my-2" value="" size="32"/>
  
 
                                         </div>
@@ -130,6 +151,9 @@ if (isset($_SESSION["user"])) {
                                         <label>Email</label>
                                         <input name="email" type="email" id="email" class="form-control my-2" value="" size="32"/>
 
+                                        <label>Periodo de Facturación</label>
+                                        <input name="periodo_fact" type="email" id="periodo_fact" class="form-control my-2" value="" size="32"/>
+
 
                                         </div>
 
@@ -148,6 +172,9 @@ if (isset($_SESSION["user"])) {
                                         
                                         <label>Dirección</label>
                                         <input name="direccion" type="name" id="direccion" class="form-control my-2" value="" size="32"/>
+
+                                        <label>Fecha Compromiso de Pago</label>
+                                        <input name="fecha_cpago" type="name" id="fecha_cpago" class="form-control my-2" value="" size="32"/>
                                         
 
                                         </div>

@@ -19,12 +19,16 @@ $(document).ready(function() {
 
                 var datos = JSON.parse(data);
 
-               numero    = datos[0].numero;
-               nombre    = datos[1].nombre;
-               apellidos = datos[2].apellidos;
-               edad      = datos[3].edad;
-               email     = datos[4].email;
-               direccion = datos[5].direccion;
+               numero         = datos[0].numero;
+               nombre         = datos[1].nombre;
+               apellidos      = datos[2].apellidos;
+               edad           = datos[3].edad;
+               email          = datos[4].email;
+               direccion      = datos[5].direccion;
+               ciclo_fact     = datos[6].ciclo_fact;
+               fact_pendiente = datos[7].fact_pendiente;
+               periodo_fact   = datos[8].periodo_fact;
+               fecha_cpago    = datos[9].fecha_cpago;
                 
               $("#pcs").val(numero);
               $("#nombre_cliente").val(nombre);
@@ -32,6 +36,10 @@ $(document).ready(function() {
               $("#edad").val(edad);
               $("#email").val(email);
               $("#direccion").val(direccion);
+              $("#ciclo_fact").val(ciclo_fact);
+              $("#fact_pendiente").val(fact_pendiente);
+              $("#periodo_fact").val(periodo_fact);
+              $("#fecha_cpago").val(fecha_cpago);
 
                 console.log(datos);
             }

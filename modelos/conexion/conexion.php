@@ -3,7 +3,7 @@
 class Conexion{   
     public static function Conectar() {        
         define('servidor', '157.230.57.48');
-        define('nombre_bd', 'ventas_cartera');
+        define('nombre_bd', 'cobranza_cliente');
         define('usuario', 'root');
         define('password', '413471*IIO');  
                            
@@ -18,7 +18,7 @@ class Conexion{
     
 }
 
-$conn = new mysqli('157.230.57.48','root','413471*IIO','ventas_cartera'); //servidor, usuario de base de datos, contraseÃ±a del usuario, nombre de base de datos
+$conn = new mysqli('157.230.57.48','root','413471*IIO','cobranza_cliente'); //servidor, usuario de base de datos, contraseÃ±a del usuario, nombre de base de datos
  	mysqli_set_charset($conn,"utf8");
     //  var_dump($conn);
 
@@ -33,7 +33,7 @@ $conn = new mysqli('157.230.57.48','root','413471*IIO','ventas_cartera'); //serv
 
 class Conexion2{
     public function conectar2(){
-        $link= new PDO("mysql:host=157.230.57.48;dbname=ventas_cartera",
+        $link= new PDO("mysql:host=157.230.57.48;dbname=cobranza_cliente",
         "root",
         "413471*IIO",
         array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,

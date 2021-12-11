@@ -6,7 +6,7 @@ class TableData {
         try {            
 
             $host        = "157.230.57.48";
-            $database    = "ventas_cartera";
+            $database    = "cobranza_cliente";
             $user        = "root";
             $passwd      = "413471*IIO"; 
 
