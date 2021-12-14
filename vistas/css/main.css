@@ -1,0 +1,294 @@
+/* datos tabla grabaciones */
+#fecha_tabla {
+    display: none;   
+}
+
+#ingreso_tabla {
+   display: none;   
+}
+
+#hora_tabla {
+    display: none;   
+ }
+
+#tipo_tabla {
+    display: none;   
+}
+#id_c {
+    display: none;   
+}
+
+#obse {
+    display: none;   
+}
+
+#campana_tabla {
+    display: none;   
+}
+
+#producto_tabla {
+    display: none;   
+}
+
+#tipo_tabla {
+    display: none;   
+}
+
+#rut_tabla {
+    display: none;   
+}
+
+#dni_tabla {
+    display: none;   
+}
+
+#frellamada_tabla {
+    display: none;   
+}
+
+#hrellamada_tabla {
+    display: none;   
+}
+
+/* datos tabla greferidos */
+#numero_tabla {
+    display: none;   
+}
+
+#email_tabla {
+    display: none;   
+}
+
+#fecha_tabla {
+    display: none;   
+}
+
+#ingreso_tabla {
+   display: none;   
+}
+
+#hora_tabla {
+    display: none;   
+ }
+
+#tipo_tabla {
+    display: none;   
+}
+
+#campana_tabla {
+    display: none;   
+}
+
+#producto_tabla {
+    display: none;   
+}
+
+#rut_tabla {
+    display: none;   
+}
+
+#frellamada_tabla {
+    display: none;   
+}
+
+#hrellamada_tabla {
+    display: none;   
+}
+
+#estado_tabla {
+    display: none;   
+}
+
+.login-margin{
+    margin-top: 8rem !important;
+}
+
+/* datos tabla greferidos */
+#fecha_tabla {
+    display: none;   
+}
+
+#ingreso_tabla {
+   display: none;   
+}
+
+#hora_tabla {
+    display: none;   
+ }
+
+#tipo_tabla {
+    display: none;   
+}
+
+#campana_tabla {
+    display: none;   
+}
+
+#producto_tabla {
+    display: none;   
+}
+
+#rut_tabla {
+    display: none;   
+}
+
+#frellamada_tabla {
+    display: none;   
+}
+
+#hrellamada_tabla {
+    display: none;   
+}
+
+
+/* datos tabla script */
+
+#n_agente{
+    display: none;   
+}
+
+#r_agente{
+    display: none;   
+}
+
+#campana{
+    display: none;   
+}
+
+#pro{
+    display: none;   
+}
+
+#t_cliente{
+    display: none;   
+}
+
+#dni_tcliente{
+    display: none;   
+}
+
+#n_cliente{
+    display: none;   
+}
+
+#f_ingreso{
+    display: none;   
+}
+
+#h_ingreso{
+    display: none;   
+} 
+
+#empresa_t{
+    display: none;   
+}
+
+#a_cliente{
+    display: none;   
+}
+
+#f_nacimiento{
+    display: none;   
+}
+
+#edad_t{
+    display: none;   
+}
+
+#sexo_t{
+    display: none;   
+}
+
+#t_contacto{
+    display: none;   
+}
+
+#email_t{
+    display: none;   
+}
+
+#direccion_t{
+    display: none;   
+}
+
+#accion_t{
+    display: none;   
+}
+
+#cantidad_t{
+    display: none;   
+}
+
+#f_entrega{
+    display: none;   
+}
+
+#sucursal_t{
+    display: none;   
+}
+
+#region_t{
+    display: none;   
+}
+
+#ciudad_t{
+    display: none;   
+}
+
+#d_entrega{
+    display: none;   
+}
+
+#t_venta{
+    display: none;   
+}
+
+#origen_t{
+    display: none;   
+}
+
+#n_orden{
+    display: none;   
+}
+
+#r_cliente{
+    display: none;   
+}
+
+/* datos tabla usuarios */
+
+#id_u{
+    display: none;   
+}
+
+#correo_us{
+    display: none;   
+}
+
+#password_us{
+    display: none;   
+}
+
+#rut_us{
+    display: none;   
+}
+
+#servicio_us{
+    display: none;   
+}
+
+#fecha_g{
+    display: none;   
+}
+#rut_g{
+    display: none;   
+}
+
+#checkUser{
+    position: relative;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-left: 30px;
+}
