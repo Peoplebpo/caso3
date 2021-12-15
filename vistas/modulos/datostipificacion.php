@@ -229,24 +229,14 @@
                                 </div> 
                                 </div> 
 
-                                <div class="col-lg-3">
-                                <div class="form-group">
-                                <label for="" class="col-form-label"><strong>Fecha Compromiso de Pago</strong></label>
-                                <input type="text" class="form-control" id="fecha_cpago" disabled>
-                                </div> 
-                                </div>
+                                
 
                             </div>
                             
                             <div class="row">
 
 
-                                <div class="col-lg-3">
-                                <div class="form-group">
-                                <label for="" class="col-form-label"><strong>Canal de Pago</strong></label>
-                                <input type="text" class="form-control" id="canal_pago" disabled>
-                                </div> 
-                                </div> 
+                                 
 
 
                             </div>
@@ -270,7 +260,27 @@
                                 <input type="text" class="form-control" id="accion" disabled>
                                 </div>
                                 </div>
+
+                                <div class="col-lg-3">
+                                <div class="form-group">
+                                <label for="" class="col-form-label"><strong>Fecha Compromiso de Pago</strong></label>
+                                <input type="text" class="form-control" id="fecha_cpago" disabled>
+                                </div> 
+                                </div>
+
+                                <div class="col-lg-3">
+                                <div class="form-group">
+                                <label for="" class="col-form-label"><strong>Canal de Pago</strong></label>
+                                <input type="text" class="form-control" id="canal_pago" disabled>
+                                </div> 
+                                </div>
                                 
+                                
+
+                            </div>
+
+                            <div class="row">
+
                                 <div class="col-lg-3">
                                 <div class="form-group">
                                 <label for="" class="col-form-label"><strong>Producto</strong></label>
@@ -285,10 +295,6 @@
                                 </div> 
                                 </div>  
 
-                            </div>
-
-                            <div class="row">
-
                                 <div class="col-lg-3">
                                 <div class="form-group">
                                 <label for="" class="col-form-label"><strong>Cantidad</strong></label>
@@ -302,6 +308,12 @@
                                 <input type="text" class="form-control" id="forma_entrega" disabled>
                                 </div>
                                 </div>
+
+                                
+
+                            </div>
+
+                            <div class="row">
 
                                 <div class="col-lg-3">
                                 <div class="form-group">
@@ -318,10 +330,6 @@
                                 </div> 
                                 </div>
 
-                            </div>
-
-                            <div class="row">
-
                                 <div class="col-lg-3">
                                 <div class="form-group">
                                 <label for="" class="col-form-label"><strong>Ciudad</strong></label>
@@ -336,24 +344,26 @@
                                 </div>
                                 </div>
 
-                                <div class="col-lg-3">
-                                <div class="form-group">
-                                <label for="" class="col-form-label"><strong>Tipo Venta</strong></label>
-                                <input type="text" class="form-control" id="tipo_venta1" disabled>
-                                </div> 
-                                </div> 
-
-
-                                <div class="col-lg-3">
-                                <div class="form-group">
-                                <label for="" class="col-form-label"><strong>Origen</strong></label>
-                                <input type="text" class="form-control" id="origen" disabled>
-                                </div> 
-                                </div>    
+                                  
 
                             </div>
 
                                 <div class="row">
+
+                                    <div class="col-lg-3">
+                                    <div class="form-group">
+                                    <label for="" class="col-form-label"><strong>Tipo Venta</strong></label>
+                                    <input type="text" class="form-control" id="tipo_venta1" disabled>
+                                    </div> 
+                                    </div> 
+
+
+                                    <div class="col-lg-3">
+                                    <div class="form-group">
+                                    <label for="" class="col-form-label"><strong>Origen</strong></label>
+                                    <input type="text" class="form-control" id="origen" disabled>
+                                    </div> 
+                                    </div> 
 
                                     <div class="col-lg-3">
                                       <div class="form-group">
@@ -362,17 +372,17 @@
                                       </div> 
                                     </div> 
 
-                                    <div class="col-lg-9">
-                                        <div class="form-group">
-                                            <label for="floatingTextarea2"><strong>Observaciones</strong></label>
-                                            <textarea style="resize: none;" class="form-control" id="observacion" style="height: 100px" disabled></textarea>
-                                            
-                                        </div>
-                                  </div>
 
-                                   
+                                </div>
 
-
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                          <div class="form-group">
+                                              <label for="floatingTextarea2"><strong>Observaciones</strong></label>
+                                              <textarea style="resize: none;" class="form-control" id="observacion" style="height: 100px" disabled></textarea>
+                                              
+                                          </div>
+                                    </div>
                                 </div>
                              
 

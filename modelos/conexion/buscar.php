@@ -37,7 +37,7 @@
                     $ciclo_fact     = $row['ciclo_fact'];
                     $fact_pendiente = $row['fact_pendiente'];
                     $periodo_fact   = $row['periodo_fact'];
-                    $fecha_cpago    = $row['fecha_cpago'];
+                    
                     
 
 
@@ -61,8 +61,7 @@
                                "fact_pendiente" => $fact_pendiente),
                           "8" => array ( 
                                "periodo_fact" => $periodo_fact),
-                          "9" => array ( 
-                               "fecha_cpago" => $fecha_cpago),
+                          
                         
                           );
                               

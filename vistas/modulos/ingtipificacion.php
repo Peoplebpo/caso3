@@ -92,21 +92,6 @@ if (isset($_SESSION["user"])) {
 
                                         <label>Ciclo de Facturación</label>
                                         <input name="ciclo_fact" type="name" id="ciclo_fact" class="form-control my-2" value="" size="32"/>
-
-                                        <label>Canal de Pago</label>
-                                        <select name="canal_pago" id="canal_pago" class="form-select my-2">
-
-                                            <option value="0">Seleccione:</option>
-                                                <?php
-                                                    require('modelos/conexion/conexion_modal.php');
-                                                    $query3 = $mysqli3 -> query ("SELECT * FROM canal_pago;");
-                                                    while ($valores3 = mysqli_fetch_array($query3)) {
-                                                    echo '<option value="'.$valores3['nombre'].'">'.$valores3['nombre'].'</option>';
-                                                    }
-
-                                                ?>
-
-                                        </select>
                                         
                                         </div>
 
@@ -172,10 +157,6 @@ if (isset($_SESSION["user"])) {
                                         <label>Dirección</label>
                                         <input name="direccion" type="name" id="direccion" class="form-control my-2" value="" size="32"/>
 
-                                        <label>Fecha Compromiso de Pago</label>
-                                        <input name="fecha_cpago" type="name" id="fecha_cpago" class="form-control my-2" value="" size="32"/>
-                                        
-
                                         </div>
 
                                     </div>
@@ -188,40 +169,11 @@ if (isset($_SESSION["user"])) {
                                         <label>Tipo</label>
                                         <select name="tipo" id="tipo" class="form-select my-2">
                                             <option value="">Seleccione</option>
-                                            <option value="VENTA">Venta</option>
-                                            <option value="NO VENTA">No Venta</option>
+                                            <option value="COBRANZA">Cobranza</option>
+                                            <option value="NO COBRANZA">No Cobranza</option>
+                                            <option value="SIN CONTACTO">Sin Contacto</option>
                                            
                                         </select>
-
-                                        <label>Cantidad</label>
-                                        <input min="0" oninput="validity.valid||(value='');" name="cantidad" type="number" id="cantidad" class="form-control my-2" value="" size="32"/>
-                                        
-                                        <label>Ciudad</label>
-                                        <input name="ciudad" type="name" id="ciudad" class="form-control my-2" value="" size="32"/>
-                                        
-                                        </div>
-
-                                        <!-- segunda columna -->
-
-                                        <div class="col"> 
-
-                                        <label>Acción</label>
-                                        <select name="accion"  id="accion" class="form-control my-2 form-select"></select>
-
-                                        <label>Forma de Entrega</label>
-                                        <select name="forma_entrega" id="forma_entrega" class="form-select my-2">
-                                            <option value="">Seleccione</option>
-                                            <option value="Retiro Tienda">Retiro en Tienda</option>
-                                            <option value="Delivery">Delivery</option>
-                                        </select>
-
-                                        <label>Dirección</label>
-                                        <input name="direccion_entrega" type="name" id="direccion_entrega" class="form-control my-2" value="" size="32"/>
-
-                                        </div>
-
-                                        <!-- tercera columna -->
-                                        <div class="col">
 
                                         <label>Producto</label>
                                         <select name="producto" id="producto" class="form-select my-2">
@@ -251,9 +203,8 @@ if (isset($_SESSION["user"])) {
 
                                                 ?>
 
-                                        </select>   
-                                        
-                                        
+                                        </select> 
+
                                         <label>Tipo Venta</label>
                                         <select name="tipo_venta" id="tipo_venta" class="form-select my-2">
 
@@ -268,22 +219,27 @@ if (isset($_SESSION["user"])) {
                                                 ?>
 
                                         </select>
-
+                                        
+                                        
+                                        
                                         </div>
 
-                                        <!-- cuarta columna -->
+                                        <!-- segunda columna -->
 
-                                        <div class="col">
+                                        <div class="col"> 
 
-                                            <label>Sub Producto</label>
+                                        <label>Acción</label>
+                                        <select name="accion"  id="accion" class="form-control my-2 form-select"></select>
+
+                                         <label>Sub Producto</label>
                                             <select name="sub_producto" class="form-select my-2" id="sub_producto">
                                               <option value="">Seleccione</option>
                                             </select>
 
-                                            <label>Región</label>
-                                            <input name="region" type="name" id="region" class="form-control my-2" value="" size="32"/>
+                                        <label>Región</label>
+                                        <input name="region" type="name" id="region" class="form-control my-2" value="" size="32"/>
 
-                                              <label>Origen</label>
+                                        <label>Origen</label>
                                             <select name="origen" id="origen" class="form-select my-2">
                                                 <option value="">Seleccione</option>
                                                 <option value="base">Base</option>
@@ -291,6 +247,57 @@ if (isset($_SESSION["user"])) {
                                                 
                                             </select>
 
+                                        
+
+                                        </div>
+
+                                        <!-- tercera columna -->
+                                        <div class="col">
+
+                                        <label>Fecha Compromiso de Pago</label>
+                                        <input name="fecha_cpago" type="date" id="fecha_cpago" class="form-control my-2" value="" size="32"/>
+
+                                        <label>Cantidad</label>
+                                        <input min="0" oninput="validity.valid||(value='');" name="cantidad" type="number" id="cantidad" class="form-control my-2" value="" size="32"/>
+
+                                        <label>Ciudad</label>
+                                        <input name="ciudad" type="name" id="ciudad" class="form-control my-2" value="" size="32"/>
+
+                                      
+                                        <label>Número de Orden</label>
+                                        <input name="numero_orden" type="name" id="numero_orden" class="form-control my-2" value="" size="32"/>
+                                      
+
+                                        </div>
+
+                                        <!-- cuarta columna -->
+
+                                        <div class="col">
+
+                                        <label>Canal de Pago</label>
+                                        <select name="canal_pago" id="canal_pago" class="form-select my-2">
+
+                                            <option value="0">Seleccione:</option>
+                                                <?php
+                                                    require('modelos/conexion/conexion_modal.php');
+                                                    $query3 = $mysqli3 -> query ("SELECT * FROM canal_pago;");
+                                                    while ($valores3 = mysqli_fetch_array($query3)) {
+                                                    echo '<option value="'.$valores3['nombre'].'">'.$valores3['nombre'].'</option>';
+                                                    }
+
+                                                ?>
+
+                                        </select>
+
+                                        <label>Forma de Entrega</label>
+                                        <select name="forma_entrega" id="forma_entrega" class="form-select my-2">
+                                            <option value="">Seleccione</option>
+                                            <option value="Retiro Tienda">Retiro en Tienda</option>
+                                            <option value="Delivery">Delivery</option>
+                                        </select>
+
+                                        <label>Dirección</label>
+                                        <input name="direccion_entrega" type="name" id="direccion_entrega" class="form-control my-2" value="" size="32"/>
 
                                             <input type="hidden" name="nombre_agente" id="nombre_agente" value="<?php echo $nombre; ?>">
                                             <input type="hidden" name="user" id="user" value="<?php echo $usuario; ?>">
@@ -303,12 +310,9 @@ if (isset($_SESSION["user"])) {
 
                                         <div class="row">
 
-                                            <div class="col-lg-3">
-                                                <label>Número de Orden</label>
-                                                <input name="numero_orden" type="name" id="numero_orden" class="form-control my-2" value="" size="32"/>
-                                            </div>
+                                    
 
-                                            <div class="col-lg-9">
+                                            <div class="col-lg-12">
 
                                                 <div class="form-group">
                                                   <label>Observaciones</label>

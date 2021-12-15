@@ -28,7 +28,7 @@ $(document).ready(function() {
                ciclo_fact     = datos[6].ciclo_fact;
                fact_pendiente = datos[7].fact_pendiente;
                periodo_fact   = datos[8].periodo_fact;
-               fecha_cpago    = datos[9].fecha_cpago;
+               
                 
               $("#pcs").val(numero);
               $("#nombre_cliente").val(nombre);
@@ -39,7 +39,7 @@ $(document).ready(function() {
               $("#ciclo_fact").val(ciclo_fact);
               $("#fact_pendiente").val(fact_pendiente);
               $("#periodo_fact").val(periodo_fact);
-              $("#fecha_cpago").val(fecha_cpago);
+              
 
                 console.log(datos);
             }

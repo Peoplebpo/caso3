@@ -1,8 +1,8 @@
 var opciones = {
-    "VENTA": ["Venta"],
-    "NO VENTA": ["No cumple Política Comercial y/o Crediticia", "Desea Otro Producto", "Exige no ser vuelto a llamar (Lista No molestar)", 
-                "Mala Experiencia con la Compañía", "No le Interesa Producto", "Promocion Poco Atractiva (Precio)", "Sin Cobertura en Zona", 
-                "Sin Stock de Producto", "Ya es Cliente de la Compañía"]
+    "COBRANZA": ["", "Compromete Pago", "Pago Realizado"],
+    "NO COBRANZA": ["Desconoce deuda", "Sin Liquidez transitoria", "Sin Liquidez permanente", "Exige no ser vuelto a llamar (Lista No molestar)", 
+    "Titular no disponible - Mensaje Interlocutor válido", "Titular no disponible - Mensaje Interlocutor no válido"],
+    "SIN CONTACTO": ["Buzón de Voz", "Sin Cobertura"],
 }
 $(function () {
     var fillSecondary = function () {
@@ -26,6 +26,9 @@ $(function() {
     $("#region").prop("disabled", true);
     $("#ciudad").prop("disabled", true);
     $("#direccion_entrega").prop("disabled", true);
+    $("#fecha_cpago").prop("disabled", true);
+
+
 
 
     $("#tipo_cliente").change(function() {
@@ -80,6 +83,22 @@ $(function() {
             $("#direccion_entrega").prop("disabled", true);
             $("#sucursal").prop("disabled", true);
             
+        }
+
+    });
+
+    $("#accion").change(function() {
+        
+
+        if ($(this).val() === "Compromete Pago") {
+            
+            
+            $("#fecha_cpago").prop("disabled", false);
+            
+           
+
+        }else {
+            $("#fecha_cpago").prop("disabled", true);
         }
 
     });
