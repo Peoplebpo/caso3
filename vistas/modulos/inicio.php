@@ -32,7 +32,7 @@
               <div class="inner">
                 <h3><span id="venta"></span></h3>
 
-                <p>VENTAS</p>
+                <p>COBRANZA</p>
               </div>
               <div class="icon">
                 <i class="fas fa-store"></i>
@@ -50,7 +50,7 @@
               <div class="inner">
                 <h3><span id="no_venta"></span></h3>
 
-                <p>NO VENTAS</p>
+                <p>NO COBRANZA</p>
               </div>
               <div class="icon">
                 <i class="fas fa-store-slash"></i>
@@ -68,7 +68,7 @@
               <div class="inner text-white">
                 <h3><span id="total_referidos"></span></h3>
 
-                <p>REFERIDOS</p>
+                <p>GRABACIONES</p>
               </div>
               <div class="icon">
                 <i class="ion ion-person-add"></i>
@@ -86,7 +86,7 @@
               <div class="inner">
                 <h3><span id="total_lista_negra"></span></h3>
 
-                <p>LISTA NEGRA</p>
+                <p>GRABACIONES HUER..</p>
               </div>
               <div class="icon">
                 <i class="fas fa-list-ul"></i>
@@ -107,7 +107,7 @@
             <!-- AREA CHART -->
             <div class="card card-success">
               <div class="card-header">
-                <h3 class="card-title">Grafico Ventas - No Ventas</h3>
+                <h3 class="card-title">Grafico Cobranza - No Cobranza</h3>
 
               </div>
               <div class="card-body">
@@ -150,7 +150,7 @@
             <!-- DONUT CHART -->
             <div class="card card-danger">
               <div class="card-header">
-                <h3 class="card-title">Productos más Vendidos</h3>
+                <h3 class="card-title">Item's Cobranza</h3>
 
               </div>
               <div class="card-body">
@@ -164,7 +164,7 @@
 
             <div class="card card-warning">
               <div class="card-header">
-                <h3 class="card-title text-white">Comportamiento NO Ventas</h3>
+                <h3 class="card-title text-white">Item's No Cobranza</h3>
               </div>
               <!-- /.card-header -->
               <div class="card-body p-0">
