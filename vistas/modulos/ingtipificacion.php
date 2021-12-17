@@ -204,23 +204,6 @@ if (isset($_SESSION["user"])) {
                                                 ?>
 
                                         </select> 
-
-                                        <label>Tipo Venta</label>
-                                        <select name="tipo_venta" id="tipo_venta" class="form-select my-2">
-
-                                            <option value="0">Seleccione:</option>
-                                                <?php
-                                                    require('modelos/conexion/conexion_modal.php');
-                                                    $query3 = $mysqli3 -> query ("SELECT * FROM tipo_venta;");
-                                                    while ($valores3 = mysqli_fetch_array($query3)) {
-                                                    echo '<option value="'.$valores3['nombre'].'">'.$valores3['nombre'].'</option>';
-                                                    }
-
-                                                ?>
-
-                                        </select>
-                                        
-                                        
                                         
                                         </div>
 
@@ -239,16 +222,6 @@ if (isset($_SESSION["user"])) {
                                         <label>Región</label>
                                         <input name="region" type="name" id="region" class="form-control my-2" value="" size="32"/>
 
-                                        <label>Origen</label>
-                                            <select name="origen" id="origen" class="form-select my-2">
-                                                <option value="">Seleccione</option>
-                                                <option value="base">Base</option>
-                                                <option value="referido">Referido</option>
-                                                
-                                            </select>
-
-                                        
-
                                         </div>
 
                                         <!-- tercera columna -->
@@ -264,10 +237,6 @@ if (isset($_SESSION["user"])) {
                                         <input name="ciudad" type="name" id="ciudad" class="form-control my-2" value="" size="32"/>
 
                                       
-                                        <label>Número de Orden</label>
-                                        <input name="numero_orden" type="name" id="numero_orden" class="form-control my-2" value="" size="32"/>
-                                      
-
                                         </div>
 
                                         <!-- cuarta columna -->
@@ -295,9 +264,6 @@ if (isset($_SESSION["user"])) {
                                             <option value="Retiro Tienda">Retiro en Tienda</option>
                                             <option value="Delivery">Delivery</option>
                                         </select>
-
-                                        <label>Dirección</label>
-                                        <input name="direccion_entrega" type="name" id="direccion_entrega" class="form-control my-2" value="" size="32"/>
 
                                             <input type="hidden" name="nombre_agente" id="nombre_agente" value="<?php echo $nombre; ?>">
                                             <input type="hidden" name="user" id="user" value="<?php echo $usuario; ?>">

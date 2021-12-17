@@ -82,10 +82,6 @@
                                 <td id="sucursal_t"><strong>SUCURSAL</strong></td>
                                 <td id="region_t"><strong>REGION</strong></td>
                                 <td id="ciudad_t"><strong>CIUDAD</strong></td>
-                                <td id="d_entrega"><strong>DIRECCION ENTREGA</strong></td>
-                                <td id="t_venta"><strong>TIPO VENTA</strong></td>
-                                <td id="origen_t"><strong>ORIGEN</strong></td>
-                                <td id="n_orden"><strong>NUMERO ORDEN</strong></td>
                                 <td id="obse"><strong>OBSERVACIONES</strong></td>
                                 <td id="obse"><strong>SUB PRODUCTOS</strong></td>
                                 <td id="obse"><strong>CICLO FACTURACIÓN</strong></td>

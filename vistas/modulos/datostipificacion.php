@@ -337,43 +337,9 @@
                                 </div> 
                                 </div> 
 
-                                <div class="col-lg-3">
-                                <div class="form-group">
-                                <label for="" class="col-form-label"><strong>Dirección Entrega</strong></label>
-                                <input type="text" class="form-control" id="direccion_entrega" disabled>
-                                </div>
-                                </div>
-
-                                  
 
                             </div>
 
-                                <div class="row">
-
-                                    <div class="col-lg-3">
-                                    <div class="form-group">
-                                    <label for="" class="col-form-label"><strong>Tipo Venta</strong></label>
-                                    <input type="text" class="form-control" id="tipo_venta1" disabled>
-                                    </div> 
-                                    </div> 
-
-
-                                    <div class="col-lg-3">
-                                    <div class="form-group">
-                                    <label for="" class="col-form-label"><strong>Origen</strong></label>
-                                    <input type="text" class="form-control" id="origen" disabled>
-                                    </div> 
-                                    </div> 
-
-                                    <div class="col-lg-3">
-                                      <div class="form-group">
-                                      <label for="" class="col-form-label"><strong>Número Orden</strong></label>
-                                      <input type="text" class="form-control" id="numero_orden" disabled>
-                                      </div> 
-                                    </div> 
-
-
-                                </div>
 
                                 <div class="row">
                                     <div class="col-lg-12">

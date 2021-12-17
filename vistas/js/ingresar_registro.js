@@ -175,7 +175,7 @@ $(document).ready(function () {
 				if ((
 					$('#tipo').val() != '' ||
 					$('#accion').val() != '' ) &&
-					$('#fecha_cpago').val() == '')
+					$('#fecha_cpago').val() !== '')
 					{
 						Swal.fire({
 							icon: 'error',
@@ -188,14 +188,12 @@ $(document).ready(function () {
 					}
 
 			if (
-				$('#tipo_venta').val() == '' ||
+
 				$('#cantidad').val() == '' ||
-				$('#origen').val() == '' ||
 				$('#observacion').val() == '' ||
 				$('#ciclo_fact').val() == '' ||
 				$('#fact_pendiente').val() == '' ||
-				$('#periodo_fact').val() == '' ||
-				$('#numero_orden').val() == '') 
+				$('#periodo_fact').val() == '') 
 				{
 					Swal.fire({
 						icon: 'error',

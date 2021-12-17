@@ -33,10 +33,6 @@
         $sucursal            = (isset($_POST['sucursal'])) ? $_POST['sucursal'] : '';
         $region              = (isset($_POST['region'])) ? $_POST['region'] : '';
         $ciudad              = (isset($_POST['ciudad'])) ? $_POST['ciudad'] : '';
-        $direccion_entrega   = (isset($_POST['direccion_entrega'])) ? $_POST['direccion_entrega'] : '';
-        $tipo_venta          = (isset($_POST['tipo_venta'])) ? $_POST['tipo_venta'] : '';
-        $origen              = (isset($_POST['origen'])) ? $_POST['origen'] : '';
-        $numero_orden        = (isset($_POST['numero_orden'])) ? $_POST['numero_orden'] : '';
         $observacion         = (isset($_POST['observacion'])) ? $_POST['observacion'] : '';
         $user                = (isset($_POST['user'])) ? $_POST['user'] : '';
         $sub_producto        = (isset($_POST['sub_producto'])) ? $_POST['sub_producto'] : '';
@@ -78,10 +74,6 @@
         sucursal              ='$sucursal',
         region                ='$region',
         ciudad                ='$ciudad',
-        direccion_entrega     ='$direccion_entrega',
-        tipo_venta            ='$tipo_venta ',
-        origen                ='$origen',
-        numero_orden          ='$numero_orden',
         observacion           ='$observacion',
         user                  ='$user',
         sub_producto          ='$sub_producto',

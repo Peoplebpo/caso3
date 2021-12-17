@@ -110,18 +110,7 @@ div.style.display = 'none';
       $('td', row).eq(33).css({
         'display': 'none',
       });
-      $('td', row).eq(34).css({
-        'display': 'none',
-      });
-      $('td', row).eq(35).css({
-        'display': 'none',
-      });
-      $('td', row).eq(36).css({
-        'display': 'none',
-      });
-      $('td', row).eq(37).css({
-        'display': 'none',
-      });
+  
     }
 
    
@@ -169,17 +158,13 @@ div.style.display = 'none';
       sucursal = fila.find('td:eq(24)').text();
       region = fila.find('td:eq(25)').text();
       ciudad = fila.find('td:eq(26)').text();
-      direccion_entrega = fila.find('td:eq(27)').text();
-      tipo_venta1 = fila.find('td:eq(28)').text();
-      origen = fila.find('td:eq(29)').text();
-      numero_orden = fila.find('td:eq(30)').text();
-      observacion = fila.find('td:eq(31)').text();
-      sub_producto = fila.find('td:eq(32)').text();
-      ciclo_fact = fila.find('td:eq(33)').text();
-      fact_pendiente = fila.find('td:eq(34)').text();
-      periodo_fact = fila.find('td:eq(35)').text();
-      fecha_cpago = fila.find('td:eq(36)').text();
-      canal_pago = fila.find('td:eq(37)').text();
+      observacion = fila.find('td:eq(27)').text();
+      sub_producto = fila.find('td:eq(28)').text();
+      ciclo_fact = fila.find('td:eq(29)').text();
+      fact_pendiente = fila.find('td:eq(30)').text();
+      periodo_fact = fila.find('td:eq(31)').text();
+      fecha_cpago = fila.find('td:eq(32)').text();
+      canal_pago = fila.find('td:eq(33)').text();
 
 
       $("#nombre_agente2").val(nombre_agente);
@@ -209,10 +194,6 @@ div.style.display = 'none';
       $("#sucursal").val(sucursal);
       $("#region").val(region);
       $("#ciudad").val(ciudad);
-      $("#direccion_entrega").val(direccion_entrega);
-      $("#tipo_venta1").val(tipo_venta1);
-      $("#origen").val(origen);
-      $("#numero_orden").val(numero_orden);
       $("#observacion").val(observacion);
       $("#sub_producto").val(sub_producto);
       $("#ciclo_fact").val(ciclo_fact);

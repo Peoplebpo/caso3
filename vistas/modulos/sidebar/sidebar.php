@@ -141,12 +141,6 @@
             <i class="nav-icon fas fa-laptop-house"></i>
             <p>SUCURSAL</p>
           </a>
-        </li>
-        <li class="nav-item">
-          <a href="tipov" class="nav-link">
-            <i class="nav-icon fas fa-spell-check"></i>
-            <p>TIPO VENTA</p>
-          </a>
         </li>';
           }
           if($rol=="Sup"){

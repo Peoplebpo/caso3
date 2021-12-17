@@ -25,7 +25,6 @@ $(function() {
     $("#sucursal").prop("disabled", true);
     $("#region").prop("disabled", true);
     $("#ciudad").prop("disabled", true);
-    $("#direccion_entrega").prop("disabled", true);
     $("#fecha_cpago").prop("disabled", true);
 
 
@@ -64,7 +63,6 @@ $(function() {
             $("#sucursal").prop("disabled", false);
             $("#region").prop("disabled", true);
             $("#ciudad").prop("disabled", true);
-            $("#direccion_entrega").prop("disabled", true);
            
 
         }else if ($(this).val() === "Delivery"){
@@ -72,7 +70,6 @@ $(function() {
             
             $("#region").prop("disabled", false);
             $("#ciudad").prop("disabled", false);
-            $("#direccion_entrega").prop("disabled", false);
             $("#sucursal").prop("disabled", true);
            
 
@@ -80,7 +77,6 @@ $(function() {
             
             $("#region").prop("disabled", true);
             $("#ciudad").prop("disabled", true);
-            $("#direccion_entrega").prop("disabled", true);
             $("#sucursal").prop("disabled", true);
             
         }
