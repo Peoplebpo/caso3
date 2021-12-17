@@ -91,8 +91,8 @@
       var barData = {
           labels: ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic'],
           datasets: [{
-                  label: 'No Ventas',
-                  backgroundColor: '#C70039',
+                  label: 'No Cobranza',
+                  backgroundColor: '#198754',
                   borderColor: '#C70039',
                   pointRadius: false,
                   pointColor: '#3b8bba',
@@ -104,8 +104,8 @@
 
               },
               {
-                  label: 'Ventas',
-                  backgroundColor: '#94CA2E',
+                  label: 'Cobranza',
+                  backgroundColor: '#DC3545',
                   borderColor: '#94CA2E',
                   pointRadius: false,
                   pointColor: 'rgba(210, 214, 222, 1)',
@@ -123,8 +123,8 @@
       var barData = {
           labels: ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic'],
           datasets: [{
-                  label: 'No Ventas',
-                  backgroundColor: '#C70039',
+                  label: 'No Cobranza',
+                  backgroundColor: '#198754',
                   borderColor: '#C70039',
                   pointRadius: false,
                   pointColor: '#3b8bba',
@@ -135,8 +135,8 @@
                   
               },
               {
-                  label: 'Ventas',
-                  backgroundColor: '#94CA2E',
+                  label: 'Cobranza',
+                  backgroundColor: '#DC3545',
                   borderColor: '#94CA2E',
                   pointRadius: false,
                   pointColor: 'rgba(210, 214, 222, 1)',
@@ -187,24 +187,24 @@
 
               var data = JSON.parse(result);
 
-              var producto = [];
-              var total_producto = [];
+              var item_cobranza = [];
+              var total_item_cobranza = [];
 
 
               for (var i = 0; i < data.length; i++) {
 
-                  producto.push(data[i].producto);
-                  total_producto.push(data[i].total_producto);
+                  item_cobranza.push(data[i].item_cobranza);
+                  total_item_cobranza.push(data[i].total_item_cobranza);
 
               }
 
 
               var donutChartCanvas = $('#donutChart').get(0).getContext('2d')
               var donutData = {
-                  labels: producto,
+                  labels: item_cobranza,
                   datasets: [{
-                      data: total_producto,
-                      backgroundColor: ['#f56954', '#00c0ef', '#3c8dbc', '#006666', '#330033', '#3300ff', '#336633', '#993300'],
+                      data: total_item_cobranza,
+                      backgroundColor: ['#2A31FF', '#00ff11'],
                   }]
               }
               var donutOptions = {
@@ -212,7 +212,7 @@
                   responsive: true,
                  
                     legend: {
-                        display: false
+                        display: true // mostrar y ocultar leyenda
                         
                         }
                       

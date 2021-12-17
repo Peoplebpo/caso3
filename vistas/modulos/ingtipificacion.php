@@ -268,7 +268,7 @@ if (isset($_SESSION["user"])) {
                                             <input type="hidden" name="nombre_agente" id="nombre_agente" value="<?php echo $nombre; ?>">
                                             <input type="hidden" name="user" id="user" value="<?php echo $usuario; ?>">
                                             <input type="hidden" name="rut_usuario" id="rut_agente" value="<?php echo $rut_usuario; ?>">
-                                            <input type="hidden" name="campana_t" id="campana_t" value="venta_en_frio">
+                                            <input type="hidden" name="campana_t" id="campana_t" value="cobranza">
                                             <input type="hidden" name="empresa" id="empresa" value="<?php echo $empresa; ?>">
                                             
 

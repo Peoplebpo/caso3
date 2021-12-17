@@ -47,7 +47,7 @@
 
         case 5:        
             
-            $consulta = "SELECT mes, total_mes FROM ventas_meses_anual";       
+            $consulta = "SELECT mes, total_mes FROM cobranza_meses_anual";       
             $resultado = $conexion->prepare($consulta);
             $resultado->execute();
             $data=$resultado->fetchAll(PDO::FETCH_ASSOC);
@@ -56,7 +56,7 @@
 
         case 6:        
             
-            $consulta = "SELECT mes, total_mes FROM no_ventas_meses_anual";       
+            $consulta = "SELECT mes, total_mes FROM no_cobranza_meses_anual";       
             $resultado = $conexion->prepare($consulta);
             $resultado->execute();
             $data=$resultado->fetchAll(PDO::FETCH_ASSOC);
@@ -64,7 +64,7 @@
 
         case 7:        
             
-            $consulta = "SELECT producto, total_producto FROM productos_vendidos";       
+            $consulta = "SELECT item_cobranza, total_item_cobranza FROM item_cobranza";       
             $resultado = $conexion->prepare($consulta);
             $resultado->execute();
             $data=$resultado->fetchAll(PDO::FETCH_ASSOC);
