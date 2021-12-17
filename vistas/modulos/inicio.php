@@ -30,16 +30,16 @@
             <!-- small box -->
             <div class="small-box bg-success">
               <div class="inner">
-                <h3><span id="venta"></span></h3>
+                <h3><span id="cobranza"></span></h3>
 
-                <p>COBRANZA</p>
+                <p>COBRANZA (M)</p>
               </div>
               <div class="icon">
                 <i class="fas fa-store"></i>
               </div>
               <?php
               if($rol<>"Agente"){
-              echo '<a href="grabaciones" class="small-box-footer">Más info <i class="fas fa-arrow-circle-right"></i></a>';
+              echo '<a href="administrador" class="small-box-footer">Más info <i class="fas fa-arrow-circle-right"></i></a>';
               }?>
             </div>
           </div>
@@ -48,16 +48,16 @@
             <!-- small box -->
             <div class="small-box bg-danger">
               <div class="inner">
-                <h3><span id="no_venta"></span></h3>
+                <h3><span id="no_cobranza"></span></h3>
 
-                <p>NO COBRANZA</p>
+                <p>NO COBRANZA (M)</p>
               </div>
               <div class="icon">
                 <i class="fas fa-store-slash"></i>
               </div>
               <?php
               if($rol<>"Agente"){
-              echo '<a href="grabaciones" class="small-box-footer">Más info <i class="fas fa-arrow-circle-right"></i></a>';
+              echo '<a href="administrador" class="small-box-footer">Más info <i class="fas fa-arrow-circle-right"></i></a>';
               }?>
             </div>
           </div>
@@ -66,7 +66,7 @@
             <!-- small box -->
             <div class="small-box bg-warning">
               <div class="inner text-white">
-                <h3><span id="total_referidos"></span></h3>
+                <h3><span id="total_grabaciones"></span></h3>
 
                 <p>GRABACIONES</p>
               </div>
@@ -84,7 +84,7 @@
             <!-- small box -->
             <div class="small-box bg-info">
               <div class="inner">
-                <h3><span id="total_lista_negra"></span></h3>
+                <h3><span id="total_grabaciones_huerfanas"></span></h3>
 
                 <p>GRABACIONES HUER..</p>
               </div>
@@ -93,7 +93,7 @@
               </div>
               <?php
               if($rol<>"Agente"){
-              echo '<a href="grabaciones" class="small-box-footer">Más info <i class="fas fa-arrow-circle-right"></i></a>';
+              echo '<a href="ghuerfanas" class="small-box-footer">Más info <i class="fas fa-arrow-circle-right"></i></a>';
               }?>
             </div>
           </div>
@@ -150,7 +150,7 @@
             <!-- DONUT CHART -->
             <div class="card card-danger">
               <div class="card-header">
-                <h3 class="card-title">Item's Cobranza</h3>
+                <h3 class="card-title">Item's Cobranza (M)</h3>
 
               </div>
               <div class="card-body">
@@ -164,7 +164,7 @@
 
             <div class="card card-warning">
               <div class="card-header">
-                <h3 class="card-title text-white">Item's No Cobranza</h3>
+                <h3 class="card-title text-white">Item's No Cobranza (M)</h3>
               </div>
               <!-- /.card-header -->
               <div class="card-body p-0">

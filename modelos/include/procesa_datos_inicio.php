@@ -13,7 +13,7 @@
 
         case 1:        
             
-            $consulta = "SELECT total FROM numero_ventas_mes_actual WHERE tipo='VENTA'";       
+            $consulta = "SELECT total FROM numero_cobranza_mes_actual WHERE tipo='COBRANZA'";       
             $resultado = $conexion->prepare($consulta);
             $resultado->execute();
             $data=$resultado->fetchAll(PDO::FETCH_ASSOC);
@@ -21,7 +21,7 @@
 
         case 2:        
             
-            $consulta = "SELECT total FROM numero_ventas_mes_actual WHERE tipo='NO VENTA'";       
+            $consulta = "SELECT total FROM numero_cobranza_mes_actual WHERE tipo='NO COBRANZA'";       
             $resultado = $conexion->prepare($consulta);
             $resultado->execute();
             $data=$resultado->fetchAll(PDO::FETCH_ASSOC);
@@ -29,7 +29,7 @@
             
         case 3:        
             
-            $consulta = "SELECT total_referidos FROM numero_referidos_mes_actual";       
+            $consulta = "SELECT total_grabaciones FROM numero_grabaciones";       
             $resultado = $conexion->prepare($consulta);
             $resultado->execute();
             $data=$resultado->fetchAll(PDO::FETCH_ASSOC);
@@ -37,7 +37,7 @@
 
         case 4:        
             
-            $consulta = "SELECT total_lista_negra FROM total_registros_lista_negra";       
+            $consulta = "SELECT total_grabaciones_huerfanas FROM total_grabaciones_huerfanas";       
             $resultado = $conexion->prepare($consulta);
             $resultado->execute();
             $data=$resultado->fetchAll(PDO::FETCH_ASSOC);
