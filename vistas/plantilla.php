@@ -109,9 +109,7 @@
         //  rutas amigables 
         if (isset($_GET["ruta"])){
           if($_GET["ruta"]=="grabaciones"||
-          $_GET["ruta"]=="greferidos"||
           $_GET["ruta"]=="ghuerfanas"||
-          $_GET["ruta"]=="grhuerfanas"||
           $_GET["ruta"]=="lnegra"||
           $_GET["ruta"]=="salir"||
           $_GET["ruta"]=="administrador"||

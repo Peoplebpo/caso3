@@ -40,6 +40,11 @@
         $observacion         = (isset($_POST['observacion'])) ? $_POST['observacion'] : '';
         $user                = (isset($_POST['user'])) ? $_POST['user'] : '';
         $sub_producto        = (isset($_POST['sub_producto'])) ? $_POST['sub_producto'] : '';
+        $ciclo_fact          = (isset($_POST['ciclo_fact'])) ? $_POST['ciclo_fact'] : '';
+        $fact_pendiente      = (isset($_POST['fact_pendiente'])) ? $_POST['fact_pendiente'] : '';
+        $periodo_fact        = (isset($_POST['periodo_fact'])) ? $_POST['periodo_fact'] : '';
+        $fecha_cpago         = (isset($_POST['fecha_cpago'])) ? $_POST['fecha_cpago'] : '';
+        $canal_pago          = (isset($_POST['canal_pago'])) ? $_POST['canal_pago'] : '';
          
 
 
@@ -79,7 +84,12 @@
         numero_orden          ='$numero_orden',
         observacion           ='$observacion',
         user                  ='$user',
-        sub_producto          ='$sub_producto'";
+        sub_producto          ='$sub_producto',
+        ciclo_fact            ='$ciclo_fact',
+        fact_pendiente        ='$fact_pendiente',
+        periodo_fact          ='$periodo_fact',
+        fecha_cpago           ='$fecha_cpago',
+        canal_pago            ='$canal_pago'";
 
 
         echo mysqli_query($conn,$sSQL); 

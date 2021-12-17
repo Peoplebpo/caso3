@@ -52,6 +52,10 @@ $(document).ready(function () {
 			$('#sexo').val() == '' ||
 			$('#direccion').val() == '' ||
 			$('#observacion').val() == '' ||
+			$('#ciclo_fact').val() == '' ||
+			$('#fact_pendiente').val() == '' ||
+			$('#periodo_fact').val() == '' ||
+			$('#canal_pago').val() == '' ||
 			$('#edad').val() == '') 
 			{
 				Swal.fire({
@@ -153,9 +157,9 @@ $(document).ready(function () {
 			
 			}
 
-			if (
+			if ((
 				$('#producto').val() != '' ||
-				$('#sub_producto').val() != '' &&
+				$('#sub_producto').val() != '' ) &&
 				$('#cantidad').val() == '')
 				{
 					Swal.fire({
@@ -165,16 +169,32 @@ $(document).ready(function () {
 						text: 'Campos Obligatorios (Producto o Sub Producto y Cantidad)'
 					})
 	
-					return true;
+					return false;
 				}
+
+				if ((
+					$('#tipo').val() != '' ||
+					$('#accion').val() != '' ) &&
+					$('#fecha_cpago').val() == '')
+					{
+						Swal.fire({
+							icon: 'error',
+							title: 'Campo Obligatorio',
+							position: 'top',
+							text: 'Campos Obligatorios (Tipo, Accion y Fecha Compromiso de Pago)'
+						})
+		
+						return false;
+					}
 
 			if (
 				$('#tipo_venta').val() == '' ||
-				$('#accion').val() == '' ||
 				$('#cantidad').val() == '' ||
-				$('#tipo').val() == '' ||
 				$('#origen').val() == '' ||
 				$('#observacion').val() == '' ||
+				$('#ciclo_fact').val() == '' ||
+				$('#fact_pendiente').val() == '' ||
+				$('#periodo_fact').val() == '' ||
 				$('#numero_orden').val() == '') 
 				{
 					Swal.fire({
@@ -213,11 +233,6 @@ $(document).ready(function () {
 					return false;
 				}
 
-				
-
-
-		
-		
 	});
 })
 

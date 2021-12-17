@@ -62,21 +62,9 @@
               </a>
             </li>
             <li class="nav-item">
-              <a href="greferidos" class="nav-link">
-              <i class="nav-icon fas fa-check"></i>
-                <p>Grabaciones Referidos</p>
-              </a>
-            </li>
-            <li class="nav-item">
               <a href="ghuerfanas" class="nav-link">
               <i class="nav-icon fas fa-check"></i>
-                <p>Grabaciones Huerfanas</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="grhuerfanas" class="nav-link">
-              <i class="nav-icon fas fa-check"></i>
-                <p>Referidos Huerfanas</p>
+                <p>Grab. Huerfanas</p>
               </a>
             </li>
           </ul>
@@ -87,13 +75,13 @@
             <p>TIPIFICACIÓN</p>
           </a>
         </li>
-        <li class="nav-item">
+          <li class="nav-item">
           <a href="clientes" class="nav-link">
             <i class="nav-icon fas fa-people-carry"></i>
             <p>CLIENTES</p>
           </a>
         </li>
-        <li class="nav-item">
+         <li class="nav-item">
           <a href="canalpago" class="nav-link">
             <i class="nav-icon fab fa-cc-visa"></i>
             <p>CANAL PAGO</p>

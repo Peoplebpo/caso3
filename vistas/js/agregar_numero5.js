@@ -107,7 +107,21 @@ div.style.display = 'none';
       $('td', row).eq(32).css({
         'display': 'none',
       });
-     
+      $('td', row).eq(33).css({
+        'display': 'none',
+      });
+      $('td', row).eq(34).css({
+        'display': 'none',
+      });
+      $('td', row).eq(35).css({
+        'display': 'none',
+      });
+      $('td', row).eq(36).css({
+        'display': 'none',
+      });
+      $('td', row).eq(37).css({
+        'display': 'none',
+      });
     }
 
    
@@ -161,6 +175,11 @@ div.style.display = 'none';
       numero_orden = fila.find('td:eq(30)').text();
       observacion = fila.find('td:eq(31)').text();
       sub_producto = fila.find('td:eq(32)').text();
+      ciclo_fact = fila.find('td:eq(33)').text();
+      fact_pendiente = fila.find('td:eq(34)').text();
+      periodo_fact = fila.find('td:eq(35)').text();
+      fecha_cpago = fila.find('td:eq(36)').text();
+      canal_pago = fila.find('td:eq(37)').text();
 
 
       $("#nombre_agente2").val(nombre_agente);
@@ -196,6 +215,11 @@ div.style.display = 'none';
       $("#numero_orden").val(numero_orden);
       $("#observacion").val(observacion);
       $("#sub_producto").val(sub_producto);
+      $("#ciclo_fact").val(ciclo_fact);
+      $("#fact_pendiente").val(fact_pendiente);
+      $("#periodo_fact").val(periodo_fact);
+      $("#fecha_cpago").val(fecha_cpago);
+      $("#canal_pago").val(canal_pago);
 
      });
 

@@ -66,7 +66,6 @@
                                 <th id="id_u">CICLO FACTURACIÓN</th>
                                 <th id="id_u">FACTURACIÓN PENDIENTE</th>
                                 <th id="id_u">PERIODO FACTURACIÓN</th>
-                                <th id="id_u">COMPROMISO DE PAGO</th>
                                 <th style="text-align: center;">ACCIONES</th>
 
                             </tr>
@@ -128,193 +127,177 @@
 
                 <form id="formproductos">
 
-                <div class="row">
+                      <div class="row">
 
-                  <div class="col-lg-6">
+                          <div class="col-lg-6">
 
-                    <div class="form-group">
-                
-                        <div class="input-group">
-                        
-                            <span class="input-group-text" id="basic-addon1"><i class="fas fa-phone-volume"></i></span>
+                              <div class="form-group">
+                          
+                                  <div class="input-group">
+                                  
+                                      <span class="input-group-text" id="basic-addon1"><i class="fas fa-phone-volume"></i></span>
 
-                            <input type="text" class="form-control input-lg" placeholder="Ingresar Telefono" id="numero" required>
+                                      <input type="text" class="form-control input-lg" placeholder="Ingresar Telefono" id="numero" required>
 
-                        </div> 
+                                  </div> 
 
-                    </div>
+                              </div>
+
+                          </div>
+
+                          <div class="col-lg-6">
+
+                              <div class="form-group">
                     
-                  </div>
+                                  <div class="input-group">
+                                  
+                                      <span class="input-group-text" id="basic-addon1"><i class="fas fa-file-signature"></i></span>
 
-                  <div class="col-lg-6">
+                                      <input type="text" class="form-control input-lg" placeholder="Ingresar Nombre" id="nombre" required>
 
-                    <div class="form-group">
-                
-                        <div class="input-group">
-                        
-                            <span class="input-group-text" id="basic-addon1"><i class="fas fa-file-signature"></i></span>
+                                  </div>
 
-                            <input type="text" class="form-control input-lg" placeholder="Ingresar Nombre" id="nombre" required>
+                              </div>
 
-                        </div>
+                          </div>
 
-                    </div>
+                      </div>
 
-                  </div>
+                      <div class="row">
 
-                </div>
+                          <div class="col-lg-6">
 
-                <div class="row">
-
-                  <div class="col-lg-6">
-
-                  
-                    <div class="form-group">
-                
-                        <div class="input-group">
-                        
-                            <span class="input-group-text" id="basic-addon1"><i class="fas fa-signature"></i></span>
-
-                            <input type="text" class="form-control input-lg" placeholder="Ingresar Apellidos" id="apellidos" required>
-
-                        </div>
-
-                    </div>
-
-                  </div>
-
-                  <div class="col-lg-6">
-
-                    <div class="form-group">
-                
-                        <div class="input-group">
-                        
-                            <span class="input-group-text" id="basic-addon1"><i class="fas fa-pager"></i></span>
-
-                            <input type="number" class="form-control input-lg" placeholder="Ingresar Edad" id="edad" required>
-
-                        </div>
-
-                    </div>
-
-                  </div>
-
-                </div>
-
-                <div class="row">
-
-                  <div class="col-lg-6">
-
-                    <div class="form-group">
-                
-                        <div class="input-group">
-                        
-                            <span class="input-group-text" id="basic-addon1"><i class="fas fa-envelope-open-text"></i></span>
-
-                            <input type="text" class="form-control input-lg" placeholder="Ingresar Email" id="email" required>
-
-                        </div>
-
-                    </div>
-
-                  </div>
-
-                  <div class="col-lg-6">
-
-                    <div class="form-group">
-                
-                        <div class="input-group">
-                        
-                            <span class="input-group-text" id="basic-addon1"><i class="fas fa-map-marked-alt"></i></span>
-
-                            <input type="text" class="form-control input-lg" placeholder="Ingresar Dirección" id="direccion" required>
-
-                        </div>
-
-                    </div>
-
-                  </div>
-
-                </div>
-
-                <div class="row">
-
-                  <div class="col-lg-6">
-
-                    <div class="form-group">
-                
-                        <div class="input-group">
-                        
-                            <span class="input-group-text" id="basic-addon1"><i class="fas fa-cash-register"></i></span>
-
-                            <input type="text" class="form-control input-lg" placeholder="Ciclo Facturación" id="ciclo_fact" required>
-
-                        </div>
-
-                    </div>
-
-                  </div>
-
-                  <div class="col-lg-6">
-
-                    <div class="form-group">
-                
-                        <div class="input-group">
-                        
-                            <span class="input-group-text" id="basic-addon1"><i class="fas fa-dumpster"></i></span>
-
-                            <input type="text" class="form-control input-lg" placeholder="Facturación Pendiente" id="fact_pendiente" required>
-
-                        </div>
-
-                    </div>
-
-                  </div>
-
-                </div>
-
-                <div class="row">
-
-                  <div class="col-lg-6">
-
-                    <div class="form-group">
-                
-                        <div class="input-group">
-                        
-                            <span class="input-group-text" id="basic-addon1"><i class="fas fa-dumpster-fire"></i></span>
-
-                            <input type="text" class="form-control input-lg" placeholder="Periodo Facturación" id="periodo_fact" required>
-
-                        </div>
-
-                    </div>
+                              <div class="form-group">
                     
-                  </div>
+                                  <div class="input-group">
+                                  
+                                      <span class="input-group-text" id="basic-addon1"><i class="fas fa-signature"></i></span>
 
-                  <div class="col-lg-6">
+                                      <input type="text" class="form-control input-lg" placeholder="Ingresar Apellidos" id="apellidos" required>
 
-                    <div class="form-group">
-                
-                        <div class="input-group">
-                        
-                            <span class="input-group-text" id="basic-addon1"><i class="fas fa-calendar-alt"></i></span>
+                                  </div>
 
-                            <input type="date" class="form-control input-lg" placeholder="Fecha Compromiso Pago" id="fecha_cpago" required>
+                              </div>
+
+                          </div>
+
+                          <div class="col-lg-6">
+
+                              <div class="form-group">
+                          
+                                  <div class="input-group">
+                                  
+                                      <span class="input-group-text" id="basic-addon1"><i class="fas fa-pager"></i></span>
+
+                                      <input type="text" class="form-control input-lg" placeholder="Ingresar Edad" id="edad" required>
+
+                                  </div>
+
+                              </div>
+                                      
+                          </div>
+
+                      </div>
+
+                      <div class="row">
+
+                        <div class="col-lg-6">
+
+                            <div class="form-group">
+                                
+                                <div class="input-group">
+                                
+                                    <span class="input-group-text" id="basic-addon1"><i class="fas fa-envelope-open-text"></i></span>
+
+                                    <input type="text" class="form-control input-lg" placeholder="Ingresar Email" id="email" required>
+
+                                </div>
+
+                            </div>
 
                         </div>
 
-                    </div>
+                        <div class="col-lg-6">
 
-                  </div>
+                             <div class="form-group">
+                                
+                                <div class="input-group">
+                                
+                                    <span class="input-group-text" id="basic-addon1"><i class="fas fa-map-marked-alt"></i></span>
+
+                                    <input type="text" class="form-control input-lg" placeholder="Ingresar Dirección" id="direccion" required>
+
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+                      </div>
+
+                      <div class="row">
+
+                        <div class="col-lg-6">
+
+                          <div class="form-group">
+                      
+                              <div class="input-group">
+                              
+                                  <span class="input-group-text" id="basic-addon1"><i class="fas fa-cash-register"></i></span>
+                                  <input type="text" class="form-control input-lg" placeholder="Ciclo Facturación" id="ciclo_fact" required>
+                              
+                                </div>
+                          </div>
+                          
+                        </div>
+
+                        <div class="col-lg-6">
+
+                          <div class="form-group">
+                      
+                              <div class="input-group">
+                              
+                                  <span class="input-group-text" id="basic-addon1"><i class="fas fa-dumpster"></i></span>
+                                  <input type="text" class="form-control input-lg" placeholder="Facturación Pendiente" id="fact_pendiente" required>
+                              
+                              </div>
+
+                          </div>
+
+                        </div>
+
+                      </div>
+                      
+                      <div class="row">
+
+                        <div class="col-lg-6">
+
+                          <div class="form-group">
+                      
+                              <div class="input-group">
+                              
+                                  <span class="input-group-text" id="basic-addon1"><i class="fas fa-dumpster-fire"></i></span>
+                                  <input type="text" class="form-control input-lg" placeholder="Periodo Facturación" id="periodo_fact" required>
+                              
+                            </div>
+
+                          </div>
+                          
+                        </div>
+
+                      </div>
 
                 </div>
 
-                </div>
                 <div class="modal-footer">
+
                   <button type="submit" id="btnguardar" class="btn btn-success">Guardar</button>
+
                 </div>
     
                 </form>
+
                 </div>
             </div>
         </div>

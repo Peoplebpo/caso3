@@ -33,17 +33,8 @@
                   <div class="row">
                     <div class="col d-grid gap-2 d-md-flex justify-content-md-end">
 
-                      <button type="button" class="btn btn-info text-white" data-bs-toggle="modal" data-bs-target="#mllamada" style="float: left; margin-right: 10px;">Llamar Referidos <i class="fas fa-file-upload" style="margin-left: 5px;"></i></button>
-                      
-                      <?php
-                        include 'vistas/modulos/modales/modal_ll.php';
-                      ?>
-                    
-
                       <a href="ingtipificacion"><button type="button" class="btn btn-warning text-white">Ingresar Registro <i class="fas fa-user-plus"></i></button></a>
-                    
-
-
+              
                     </div>
                   </div>        
                 </div>
@@ -97,6 +88,11 @@
                                 <td id="n_orden"><strong>NUMERO ORDEN</strong></td>
                                 <td id="obse"><strong>OBSERVACIONES</strong></td>
                                 <td id="obse"><strong>SUB PRODUCTOS</strong></td>
+                                <td id="obse"><strong>CICLO FACTURACIÓN</strong></td>
+                                <td id="obse"><strong>FACTURACIÓN PENDIENTE</strong></td>
+                                <td id="obse"><strong>PERIODO DE FACTURACIÓN</strong></td>
+                                <td id="obse"><strong>FECHA COM. PAGO</strong></td>
+                                <td id="obse"><strong>CANAL DE PAGO</strong></td>
                                 <td><strong>ACCIONES</strong></td>
                           
                             </tr>
