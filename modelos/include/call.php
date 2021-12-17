@@ -18,7 +18,7 @@ curl_setopt($ch, CURLOPT_POST, TRUE);
 
 $variables = "{'nombre_agente':'".$nombre_agente."','campana':'movil_ob','phone_agente':'".$phone_agente."','email_agente':'".$email_agente."'}";
 
-curl_setopt($ch, CURLOPT_POSTFIELDS, 'scenario_id=22481&phone='.$phone.'&caller_id=56412560118&domain=peoplebpo&access_token=ddef8a4b5025a6f21cb0f6ca3a482324&variables={"nombre_agente":"'.$nombre_agente.'","rut_agente":"'.$rut_agente.'","phone_agente":"'.$phone_agente.'","email_agente":"'.$email_agente.'"}');
+curl_setopt($ch, CURLOPT_POSTFIELDS, 'scenario_id=24208&phone='.$phone.'&caller_id=56412560118&domain=peoplebpo&access_token=ddef8a4b5025a6f21cb0f6ca3a482324&variables={"nombre_agente":"'.$nombre_agente.'","rut_agente":"'.$rut_agente.'","phone_agente":"'.$phone_agente.'","email_agente":"'.$email_agente.'"}');
 
 // recibimos la respuesta y la guardamos en una variable
 
