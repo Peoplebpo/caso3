@@ -28,7 +28,7 @@
         <div class="row">
           <div class="col-lg-3 col-6">
             <!-- small box -->
-            <div class="small-box bg-danger">
+            <div class="small-box bg-success">
               <div class="inner">
                 <h3><span id="cobranza"></span></h3>
 
@@ -46,7 +46,7 @@
           <!-- ./col -->
           <div class="col-lg-3 col-6">
             <!-- small box -->
-            <div class="small-box bg-success">
+            <div class="small-box bg-danger">
               <div class="inner">
                 <h3><span id="no_cobranza"></span></h3>
 
@@ -148,7 +148,7 @@
          <div class="col-md-6">
          
             <!-- DONUT CHART -->
-            <div class="card card-danger">
+            <div class="card card-success">
               <div class="card-header">
                 <h3 class="card-title">Item's Cobranza (M)</h3>
 
@@ -162,7 +162,7 @@
 
                 <!-- /.card -->
 
-            <div class="card card-warning">
+            <div class="card card-danger">
               <div class="card-header">
                 <h3 class="card-title text-white">Item's No Cobranza (M)</h3>
               </div>
