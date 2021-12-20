@@ -105,7 +105,7 @@
 
          <div class="col-md-6">
             <!-- AREA CHART -->
-            <div class="card card-success">
+            <div class="card card-secondary">
               <div class="card-header">
                 <h3 class="card-title">Grafico Cobranza - No Cobranza</h3>
 
@@ -149,7 +149,7 @@
          
             <!-- DONUT CHART -->
             <div class="card card-success">
-              <div class="card-header">
+              <div class="card-header bg-success">
                 <h3 class="card-title">Item's Cobranza (M)</h3>
 
               </div>
