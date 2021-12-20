@@ -41,12 +41,6 @@
           if($rol=="Admin"){
             echo 
         '<li class="nav-item">
-            <a href="usuarios" class="nav-link">
-              <i class="nav-icon fas fa-users"></i>
-              <p>USUARIOS</p>
-            </a>
-        </li>
-        <li class="nav-item">
           <a href="#" class="nav-link">
             <i class="nav-icon fas fa-file-excel"></i>
             <p>
@@ -76,23 +70,11 @@
           </a>
         </li>
           <li class="nav-item">
-          <a href="clientes" class="nav-link">
-            <i class="nav-icon fas fa-people-carry"></i>
-            <p>CLIENTES</p>
-          </a>
-        </li>
-         <li class="nav-item">
-          <a href="canalpago" class="nav-link">
-            <i class="nav-icon fab fa-cc-visa"></i>
-            <p>CANAL PAGO</p>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="lnegra" class="nav-link">
-            <i class="nav-icon fas fa-list-ul"></i>
-            <p>LISTA NEGRA</p>
-          </a>
-        </li>
+            <a href="clientes" class="nav-link">
+              <i class="nav-icon fas fa-people-carry"></i>
+              <p>CLIENTES</p>
+            </a>
+          </li>
         <li class="nav-item">
           <a href="sms" class="nav-link">
             <i class="nav-icon fas fa-sms"></i>
@@ -105,87 +87,125 @@
             <p>LLAMADAS</p>
           </a>
         </li>
-       
         <li class="nav-item">
           <a href="#" class="nav-link">
-            <i class="nav-icon fas fa-shopping-basket"></i>
+            <i class="nav-icon fas fa-tasks"></i>
             <p>
-              PRODUCTOS
+              GESTIÓN
               <i class="right fas fa-angle-left"></i>
             </p>
           </a>
+
           <ul class="nav nav-treeview">
             <li class="nav-item">
-              <a href="productos" class="nav-link">
-                <i class="nav-icon  fas fa-cart-plus"></i>
-                <p>Productos</p>
+              <a href="usuarios" class="nav-link">
+                <i class="nav-icon fas fa-users"></i>
+                <p>USUARIOS</p>
               </a>
             </li>
+
             <li class="nav-item">
-              <a href="subproductos" class="nav-link">
-                <i class="nav-icon  fab fa-shopify"></i>
-                <p>Sub Productos</p>
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-shopping-basket"></i>
+                <p>
+                  PRODUCTOS
+                  <i class="right fas fa-angle-left"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="productos" class="nav-link">
+                    <i class="nav-icon  fas fa-cart-plus"></i>
+                    <p>Productos</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="subproductos" class="nav-link">
+                    <i class="nav-icon  fab fa-shopify"></i>
+                    <p>Sub Productos</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a href="servicios" class="nav-link">
+                <i class="nav-icon fab fa-audible"></i>
+                <i class="fas "></i>
+                <p>SERVICIOS</p>
               </a>
             </li>
+
+            <li class="nav-item">
+              <a href="sucursal" class="nav-link">
+                <i class="nav-icon fas fa-laptop-house"></i>
+                <p>SUCURSAL</p>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="canalpago" class="nav-link">
+                <i class="nav-icon fab fa-cc-visa"></i>
+                <p>CANAL PAGO</p>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="lnegra" class="nav-link">
+                <i class="nav-icon fas fa-list-ul"></i>
+                <p>LISTA NEGRA</p>
+              </a>
+            </li>
+          
           </ul>
-      </li>
-        <li class="nav-item">
-          <a href="servicios" class="nav-link">
-            <i class="nav-icon fab fa-audible"></i>
-            <i class="fas "></i>
-            <p>SERVICIOS</p>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="sucursal" class="nav-link">
-            <i class="nav-icon fas fa-laptop-house"></i>
-            <p>SUCURSAL</p>
-          </a>
         </li>';
           }
           if($rol=="Sup"){
             echo '
             <li class="nav-item">
-          <a href="#" class="nav-link">
-            <i class="nav-icon fas fa-file-excel"></i>
-            <p>
-              REPORTES
-              <i class="right fas fa-angle-left"></i>
-            </p>
-          </a>
-          <ul class="nav nav-treeview">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-file-excel"></i>
+                <p>
+                  REPORTES
+                  <i class="right fas fa-angle-left"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="grabaciones" class="nav-link">
+                    <i class="nav-icon fas fa-check"></i>
+                    <p>Grabaciones</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="ghuerfanas" class="nav-link">
+                  <i class="nav-icon fas fa-check"></i>
+                    <p>Grabaciones Huerfanas</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
             <li class="nav-item">
-              <a href="grabaciones" class="nav-link">
-                <i class="nav-icon fas fa-check"></i>
-                <p>Grabaciones</p>
+              <a href="administrador" class="nav-link">
+                <i class="nav-icon fas fa-keyboard"></i>
+                <p>TIPIFICACIÓN</p>
               </a>
             </li>
+
             <li class="nav-item">
-              <a href="greferidos" class="nav-link">
-              <i class="nav-icon fas fa-check"></i>
-                <p>Grabaciones Referidos</p>
+              <a href="clientes" class="nav-link">
+                <i class="nav-icon fas fa-people-carry"></i>
+                <p>CLIENTES</p>
               </a>
             </li>
+
             <li class="nav-item">
-              <a href="ghuerfanas" class="nav-link">
-              <i class="nav-icon fas fa-check"></i>
-                <p>Grabaciones Huerfanas</p>
+              <a href="sms" class="nav-link">
+                <i class="nav-icon fas fa-sms"></i>
+                <p>ENVIO SMS</p>
               </a>
-            </li>
-            <li class="nav-item">
-              <a href="grhuerfanas" class="nav-link">
-              <i class="nav-icon fas fa-check"></i>
-                <p>Referidos Huerfanas</p>
-              </a>
-            </li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a href="lnegra" class="nav-link">
-            <i class="nav-icon fas fa-list-ul"></i>
-            <p>LISTA NEGRA</p>
-          </a>
-        </li>';
+            </li>';
           }
 
           if($rol=="Age"){
