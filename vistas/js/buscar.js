@@ -28,6 +28,7 @@ $(document).ready(function() {
                ciclo_fact     = datos[6].ciclo_fact;
                fact_pendiente = datos[7].fact_pendiente;
                periodo_fact   = datos[8].periodo_fact;
+               f_activacion   = datos[9].f_activacion;
                
                 
               $("#pcs").val(numero);
@@ -39,6 +40,7 @@ $(document).ready(function() {
               $("#ciclo_fact").val(ciclo_fact);
               $("#fact_pendiente").val(fact_pendiente);
               $("#periodo_fact").val(periodo_fact);
+              $("#f_activacion").val(f_activacion);
               
 
                 console.log(datos);

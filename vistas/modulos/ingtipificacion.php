@@ -103,7 +103,7 @@ if (isset($_SESSION["user"])) {
                                         <input min="0" oninput="validity.valid||(value='');" name="pcs" type="number" id="pcs" class="form-control my-2" value="" size="32"/>
 
                                         <label>Nombre</label>
-                                        <input name="nombre_cliente" type="name" id="nombre_cliente" class="form-control my-2" value="" size="32"/>
+                                        <input name="nombre_cliente" type="name" id="nombre_cliente" class="form-control my-2" value="" size="32" />
 
                                         <label>Sexo</label>
                                         <select name="sexo" id="sexo" class="form-select my-2">
@@ -151,8 +151,8 @@ if (isset($_SESSION["user"])) {
                                             onfocus="limpiaPuntoGuion(2)" onpaste="return false" ondrag="return false" ondrop="return false"
                                             oncopy="return false" oncut="return false" autocomplete="off"> 
 
-                                        <label>Fecha de Nacimiento</label>
-                                        <input name="fecha_nacimiento" type="date" id="fecha_nacimiento" class="form-control my-2" value="" size="32" />
+                                        <label>Fecha de Activación</label>
+                                        <input name="f_activacion" type="date" id="f_activacion" class="form-control my-2" value="" size="32" />
                                         
                                         <label>Dirección</label>
                                         <input name="direccion" type="name" id="direccion" class="form-control my-2" value="" size="32"/>

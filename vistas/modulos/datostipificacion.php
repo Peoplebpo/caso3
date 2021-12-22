@@ -157,8 +157,8 @@
 
                                 <div class="col-lg-3">
                                 <div class="form-group">
-                                <label for="" class="col-form-label"><strong>Fecha Nacimiento</strong></label>
-                                <input type="text" class="form-control" id="fecha_nacimiento" disabled>
+                                <label for="" class="col-form-label"><strong>Fecha de Activación</strong></label>
+                                <input type="text" class="form-control" id="f_activacion" disabled>
                                 </div>
                                 </div>
 

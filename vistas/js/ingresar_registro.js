@@ -4,7 +4,7 @@ $(document).ready(function () {
 
 	$('#btn_ingresar').click(function () {
 
-		var fecha 		= $("#fecha_nacimiento").val();
+		var fecha 		= $("#f_activacion").val();
 		var fecha2 		= fecha.length;
 
 
@@ -172,10 +172,11 @@ $(document).ready(function () {
 					return false;
 				}
 
-				if ((
-					$('#tipo').val() != '' ||
-					$('#accion').val() != '' ) &&
-					$('#fecha_cpago').val() !== '')
+				if (
+					$('#tipo').val() == '' ||
+					$('#accion').val() == '' ||
+					$('#accion').val() == 'Compromete Pago' &&
+					$('#fecha_cpago').val() == '')
 					{
 						Swal.fire({
 							icon: 'error',

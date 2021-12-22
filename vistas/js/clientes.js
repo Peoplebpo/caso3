@@ -26,6 +26,9 @@ $(document).ready(function() {
              }),
               $('td', row).eq(9).css({
                 'display': 'none',
+             }),
+             $('td', row).eq(10).css({
+              'display': 'none',
              })
           
          },
@@ -35,22 +38,23 @@ $(document).ready(function() {
    //submit para el Alta y Actualización
    $('#formproductos').submit(function(e){                         
        e.preventDefault(); //evita el comportambiento normal del submit, es decir, recarga total de la página
-       numero    = $.trim($('#numero').val()); 
-       nombre    = $.trim($('#nombre').val());
-       apellidos = $.trim($('#apellidos').val());
-       edad      = $.trim($('#edad').val());
-       email     = $.trim($('#email').val());
-       direccion = $.trim($('#direccion').val()); 
+       numero         = $.trim($('#numero').val()); 
+       nombre         = $.trim($('#nombre').val());
+       apellidos      = $.trim($('#apellidos').val());
+       edad           = $.trim($('#edad').val());
+       email          = $.trim($('#email').val());
+       direccion      = $.trim($('#direccion').val()); 
        ciclo_fact     = $.trim($('#ciclo_fact').val());  
        fact_pendiente = $.trim($('#fact_pendiente').val()); 
        periodo_fact   = $.trim($('#periodo_fact').val()); 
+       f_activacion   = $.trim($('#f_activacion').val());
        
        
            $.ajax({
              url: "modelos/include/clientes.php",
              type: "POST",
              datatype:"json",    
-             data:  {id:id, numero:numero, nombre:nombre, apellidos:apellidos, edad:edad, email:email, direccion:direccion, ciclo_fact:ciclo_fact, fact_pendiente:fact_pendiente, periodo_fact:periodo_fact, opcion:opcion},    
+             data:  {id:id, numero:numero, nombre:nombre, apellidos:apellidos, edad:edad, email:email, direccion:direccion, ciclo_fact:ciclo_fact, fact_pendiente:fact_pendiente, periodo_fact:periodo_fact, f_activacion:f_activacion, opcion:opcion},    
              success: function(data) {
                tablaProductos.ajax.reload(null, false);
               }
@@ -88,6 +92,7 @@ $(document).ready(function() {
        ciclo_fact     = fila.find('td:eq(7)').text();
        fact_pendiente = fila.find('td:eq(8)').text();
        periodo_fact   = fila.find('td:eq(9)').text();
+       f_activacion   = fila.find('td:eq(10)').text();
       
      
        $("#numero").val(numero);
@@ -98,7 +103,8 @@ $(document).ready(function() {
        $("#direccion").val(direccion);
        $("#ciclo_fact").val(ciclo_fact);
        $("#fact_pendiente").val(fact_pendiente);
-       $("#periodo_fact").val(periodo_fact);
+       $("#periodo_fact").val(periodo_fact); 
+       $("#f_activacion").val(f_activacion);
       
      
        $(".modal-header").css("background-color", "#007bff");

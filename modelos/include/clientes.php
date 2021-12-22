@@ -3,15 +3,16 @@ require('../conexion/conexion.php');
 $objeto = new Conexion();
 $conexion = $objeto->Conectar();
 
-$numero    = (isset($_POST['numero'])) ? $_POST['numero'] : '';
-$nombre    = (isset($_POST['nombre'])) ? $_POST['nombre'] : '';
-$apellidos = (isset($_POST['apellidos'])) ? $_POST['apellidos'] : '';
-$edad      = (isset($_POST['edad'])) ? $_POST['edad'] : '';
-$email     = (isset($_POST['email'])) ? $_POST['email'] : '';
-$direccion = (isset($_POST['direccion'])) ? $_POST['direccion'] : '';
+$numero         = (isset($_POST['numero'])) ? $_POST['numero'] : '';
+$nombre         = (isset($_POST['nombre'])) ? $_POST['nombre'] : '';
+$apellidos      = (isset($_POST['apellidos'])) ? $_POST['apellidos'] : '';
+$edad           = (isset($_POST['edad'])) ? $_POST['edad'] : '';
+$email          = (isset($_POST['email'])) ? $_POST['email'] : '';
+$direccion      = (isset($_POST['direccion'])) ? $_POST['direccion'] : '';
 $ciclo_fact     = (isset($_POST['ciclo_fact'])) ? $_POST['ciclo_fact'] : '';
 $fact_pendiente = (isset($_POST['fact_pendiente'])) ? $_POST['fact_pendiente'] : '';
-$periodo_fact   = (isset($_POST['periodo_fact'])) ? $_POST['periodo_fact'] : '';
+$periodo_fact   = (isset($_POST['periodo_fact'])) ? $_POST['periodo_fact'] : ''; 
+$f_activacion   = (isset($_POST['f_activacion'])) ? $_POST['f_activacion'] : '';
 
 
 
@@ -22,7 +23,7 @@ $id = (isset($_POST['id'])) ? $_POST['id'] : '';
 switch($opcion){
   
     case 1:
-        $consulta = "INSERT INTO clientes (numero, nombre, apellidos, edad, email, direccion, ciclo_fact, fact_pendiente, periodo_fact ) VALUES('$numero','$nombre','$apellidos','$edad','$email','$direccion', '$ciclo_fact', '$fact_pendiente', '$periodo_fact') ";
+        $consulta = "INSERT INTO clientes (numero, nombre, apellidos, edad, email, direccion, ciclo_fact, fact_pendiente, periodo_fact, f_activacion ) VALUES('$numero','$nombre','$apellidos','$edad','$email','$direccion','$ciclo_fact','$fact_pendiente','$periodo_fact','$f_activacion') ";
         $resultado = $conexion->prepare($consulta);
         $resultado->execute(); 
         
@@ -33,7 +34,7 @@ switch($opcion){
         break;   
 
     case 2:        
-        $consulta = "UPDATE clientes SET numero='$numero', nombre='$nombre', apellidos='$apellidos', edad='$edad', email='$email', direccion='$direccion', ciclo_fact='$ciclo_fact', fact_pendiente='$fact_pendiente', periodo_fact='$periodo_fact' WHERE id='$id' ";		
+        $consulta = "UPDATE clientes SET numero='$numero', nombre='$nombre', apellidos='$apellidos', edad='$edad', email='$email', direccion='$direccion', ciclo_fact='$ciclo_fact', fact_pendiente='$fact_pendiente', periodo_fact='$periodo_fact', f_activacion='$f_activacion' WHERE id='$id' ";		
         $resultado = $conexion->prepare($consulta);
         $resultado->execute();        
         
