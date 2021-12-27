@@ -35,13 +35,17 @@
                                   <div class="col d-grid gap-2 d-md-flex justify-content-md-end">
 
                                       <button id="btnguardar" type="button" class="btn btn-info text-white"  data-bs-toggle="modal">Agregar Clientes</button>
+                                      <button type="button" class="btn btn-success text-white" data-bs-toggle="modal" data-bs-target="#subir_usuarios" style="float: left; margin-right: 10px;">Subir Clientes<i class="fas fa-file-upload" style="margin-left: 5px;"></i></button>
+                                      <?php
+                                        include 'vistas/modulos/modales/modal_cliente.php';
+                                      ?>
 
                                   </div>
-                      
 
                               </div>
 
                            </div>
+                           
                     </div>
                     
 

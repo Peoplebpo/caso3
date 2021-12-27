@@ -88,10 +88,10 @@ if (isset($_SESSION["user"])) {
                                         <input name="dni_cliente" type="name" id="dni_cliente" class="form-control my-2" value="" size="32"/>
 
                                         <label>Edad</label>
-                                        <input min="0" oninput="validity.valid||(value='');" name="edad" type="number" id="edad" class="form-control my-2" value="" size="32" readonly/>
+                                        <input min="0" oninput="validity.valid||(value='');" name="edad" type="number" id="edad" class="form-control my-2" value="" size="32" />
 
                                         <label>Ciclo de Facturación</label>
-                                        <input name="ciclo_fact" type="name" id="ciclo_fact" class="form-control my-2" value="" size="32" readonly/>
+                                        <input name="ciclo_fact" type="name" id="ciclo_fact" class="form-control my-2" value="" size="32" />
                                         
                                         </div>
 
@@ -103,7 +103,7 @@ if (isset($_SESSION["user"])) {
                                         <input min="0" oninput="validity.valid||(value='');" name="pcs" type="number" id="pcs" class="form-control my-2" value="" size="32"/>
 
                                         <label>Nombre</label>
-                                        <input name="nombre_cliente" type="name" id="nombre_cliente" class="form-control my-2" value="" size="32" readonly/>
+                                        <input name="nombre_cliente" type="name" id="nombre_cliente" class="form-control my-2" value="" size="32" />
 
                                         <label>Sexo</label>
                                         <select name="sexo" id="sexo" class="form-select my-2">
@@ -114,7 +114,7 @@ if (isset($_SESSION["user"])) {
                                         </select>
 
                                         <label>Facturación Pendiente</label>
-                                        <input name="fact_pendiente" type="name" id="fact_pendiente" class="form-control my-2" value="" size="32" readonly/>
+                                        <input name="fact_pendiente" type="name" id="fact_pendiente" class="form-control my-2" value="" size="32" />
  
 
                                         </div>
@@ -130,13 +130,13 @@ if (isset($_SESSION["user"])) {
                                         </select>
 
                                         <label>Apellidos</label>
-                                        <input name="apellido_cliente" type="name" id="apellido_cliente" class="form-control my-2" value="" size="32" readonly/>
+                                        <input name="apellido_cliente" type="name" id="apellido_cliente" class="form-control my-2" value="" size="32" />
 
                                         <label>Email</label>
-                                        <input name="email" type="email" id="email" class="form-control my-2" value="" size="32" readonly/>
+                                        <input name="email" type="email" id="email" class="form-control my-2" value="" size="32" />
 
                                         <label>Periodo de Facturación</label>
-                                        <input name="periodo_fact" type="text" id="periodo_fact" class="form-control my-2" value="" size="32" readonly/>
+                                        <input name="periodo_fact" type="text" id="periodo_fact" class="form-control my-2" value="" size="32" />
 
 
                                         </div>
@@ -152,10 +152,10 @@ if (isset($_SESSION["user"])) {
                                             oncopy="return false" oncut="return false" autocomplete="off"> 
 
                                         <label>Fecha de Activación</label>
-                                        <input name="f_activacion" type="date" id="f_activacion" class="form-control my-2" value="" size="32" readonly/>
+                                        <input name="f_activacion" type="date" id="f_activacion" class="form-control my-2" value="" size="32" />
                                         
                                         <label>Dirección</label>
-                                        <input name="direccion" type="name" id="direccion" class="form-control my-2" value="" size="32" readonly/>
+                                        <input name="direccion" type="name" id="direccion" class="form-control my-2" value="" size="32" />
 
                                         </div>
 

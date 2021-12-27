@@ -23,7 +23,7 @@ if ($inc) {
             curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
             curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query([
             'domain' => 'peoplebpo',
-            'campaign_id' => 30029,
+            'campaign_id' => 31925,
             'access_token' => 'ddef8a4b5025a6f21cb0f6ca3a482324',
             'rows' => '[{"phone":"'.$phone.'","new_caller_id":"56999999999","mensaje":"'.$mensaje.'","UTC":"America/Santiago"}]'
             ]));

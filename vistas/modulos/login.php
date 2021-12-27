@@ -16,7 +16,7 @@
       
       <div class="card card-outline card-primary"  style="margin-top: -150px;">
         <div class="card-header text-center">
-          <a href="" class="h2"><b>INICIAR SESSION</b></a>
+          <a href="" class="h2"><b>COBRANZA</b></a>
         </div>
         <div class="card-body">
       
