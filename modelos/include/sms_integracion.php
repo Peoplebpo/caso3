@@ -11,17 +11,26 @@ $access_token    = (isset($_POST['access_token'])) ? $_POST['access_token'] : ''
 
 
 $opcion = (isset($_POST['opcion'])) ? $_POST['opcion'] : '';
-$id = (isset($_POST['id'])) ? $_POST['id'] : '';
+
 
 
 switch($opcion){
   
     case 2:        
-        $consulta = "UPDATE sms_integracion SET dominio='$dominio', campana_id='$campana_id', access_token='$access_token' WHERE id='$id' ";		
+
+        $consulta = "SELECT * FROM sms_integracion";       
         $resultado = $conexion->prepare($consulta);
-        $resultado->execute();        
-        
-        $consulta = "SELECT * FROM sms_integracion WHERE id='$id' ";       
+        $resultado->execute();
+        $data=$resultado->fetchAll(PDO::FETCH_ASSOC);
+        break;
+    
+    case 3:
+
+        $consulta = "UPDATE sms_integracion SET dominio='$dominio', campana_id='$campana_id', access_token='$access_token'";		
+        $resultado = $conexion->prepare($consulta);
+        $resultado->execute(); 
+
+        $consulta = "SELECT * FROM sms_integracion";       
         $resultado = $conexion->prepare($consulta);
         $resultado->execute();
         $data=$resultado->fetchAll(PDO::FETCH_ASSOC);

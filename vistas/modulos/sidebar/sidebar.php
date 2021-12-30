@@ -82,6 +82,41 @@
           </a>
         </li>
         <li class="nav-item">
+          <a href="#" class="nav-link">
+            <i class="nav-icon fas fa-envelope-open-text"></i>
+              <p>ENVIO EMAIL
+                <i class="right fas fa-angle-left"></i>
+              </p>
+          </a>
+          <ul class="nav nav-treeview">
+            <li class="nav-item">
+              <a href="campañas" class="nav-link">
+                <i class="nav-icon fas fa-campground"></i>
+                <p>Campañas</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="plantillas" class="nav-link">
+              <i class="nav-icon fas fa-photo-video"></i>
+                <p>Plantillas</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="enviar" class="nav-link">
+              <i class="nav-icon fas fa-share-square"></i>
+              <i class=""></i>
+                <p>Enviar</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="integracion" class="nav-link">
+              <i class="nav-icon fas fa-link"></i>
+                <p>Integracion</p>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item">
           <a href="https://kit-us.voximplant.com/login" class="nav-link" target="_blank">
             <i class="nav-icon fas fa-phone-square-alt"></i>
             <p>LLAMADAS</p>
@@ -205,6 +240,41 @@
                 <i class="nav-icon fas fa-sms"></i>
                 <p>ENVIO SMS</p>
               </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-envelope-open-text"></i>
+                  <p>ENVIO EMAIL
+                    <i class="right fas fa-angle-left"></i>
+                  </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="campañas" class="nav-link">
+                    <i class="nav-icon fas fa-campground"></i>
+                    <p>Campañas</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="plantillas" class="nav-link">
+                  <i class="nav-icon fas fa-photo-video"></i>
+                    <p>Plantillas</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="enviar" class="nav-link">
+                  <i class="nav-icon fas fa-share-square"></i>
+                  <i class=""></i>
+                    <p>Enviar</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="integracion" class="nav-link">
+                  <i class="nav-icon fas fa-link"></i>
+                    <p>Integracion</p>
+                  </a>
+                </li>
+              </ul>
             </li>';
           }
 
