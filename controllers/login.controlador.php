@@ -39,43 +39,24 @@ class ControladorLogin {
   
                   }else{
                       echo "<script>
-                      const Toast = Swal.mixin({
-                          toast: true,
-                          position: 'top-end',
-                          showConfirmButton: false,
-                          timer: 3000,
-                          timerProgressBar: true,
-                          didOpen: (toast) => {
-                            toast.addEventListener('mouseenter', Swal.stopTimer)
-                            toast.addEventListener('mouseleave', Swal.resumeTimer)
-                          }
-                        })
+
+                      Swal.fire({
+                        icon: 'error',
+                        title: 'Datos Incorrectos',
+                        text: 'Verificar que los datos ingresados sean Correctos',
                         
-                        Toast.fire({
-                          icon: 'error',
-                          title: 'Datos incorrectos'
-                        })
+                      })
                    </script>";
                   
                   }
                 }else{
                   echo "<script>
-                      const Toast = Swal.mixin({
-                          toast: true,
-                          position: 'top-end',
-                          showConfirmButton: false,
-                          timer: 3000,
-                          timerProgressBar: true,
-                          didOpen: (toast) => {
-                            toast.addEventListener('mouseenter', Swal.stopTimer)
-                            toast.addEventListener('mouseleave', Swal.resumeTimer)
-                          }
-                        })
+                      
+                      Swal.fire({
+                        icon: 'error',
+                        title: 'El Usuario no Existe',
                         
-                        Toast.fire({
-                          icon: 'error',
-                          title: 'usuario no existe'
-                        })
+                      })
                    </script>";
                 }
             }

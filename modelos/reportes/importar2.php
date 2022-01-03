@@ -124,7 +124,7 @@
                              echo ' <div class="container">
         
                                     <div class="d-flex justify-content-center">
-                                        <button id="btnSubmitm" class="btn btn-primary">Cargar Datos En Campaña</button>
+                                        <button id="btnSubmitm" class="btn btn-primary">Cargar Datos En Campañaas</button>
                                     </div>
                         
                                     <!-- <div id="resultado"></div> -->
