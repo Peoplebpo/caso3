@@ -22,8 +22,7 @@
   <link rel="stylesheet" href="vistas/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
   <!-- iCheck -->
   <link rel="stylesheet" href="vistas/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
-  <!-- JQVMap -->
-  <link rel="stylesheet" href="vistas/plugins/jqvmap/jqvmap.min.css">
+  
   <!-- Theme style -->
   <link rel="stylesheet" href="vistas/dist/css/adminlte.css">
   <!-- overlayScrollbars -->
@@ -37,12 +36,12 @@
 <script src="vistas/plugins/jquery/jquery.min.js"></script>
 <!-- jQuery UI 1.11.4 -->
 <script src="vistas/plugins/jquery-ui/jquery-ui.min.js"></script>
- <!-- Toastr -->
- <link rel="stylesheet" href="vistas/plugins/toastr/toastr.min.css">
+
 <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
 <script>
   $.widget.bridge('uibutton', $.ui.button)
 </script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 <!-- Bootstrap 4 -->
 <script src="vistas/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -50,9 +49,7 @@
 <script src="vistas/plugins/chart.js/Chart.min.js"></script>
 <!-- Sparkline -->
 <script src="vistas/plugins/sparklines/sparkline.js"></script>
-<!-- JQVMap -->
-<script src="vistas/plugins/jqvmap/jquery.vmap.min.js"></script>
-<script src="vistas/plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+
 <!-- jQuery Knob Chart -->
 <script src="vistas/plugins/jquery-knob/jquery.knob.min.js"></script>
 <!-- daterangepicker -->
@@ -68,8 +65,6 @@
 <script src="vistas/dist/js/adminlte.js"></script>
 <!-- SweetAlert2 -->
 <script src="vistas/plugins/sweetalert2/sweetalert2.min.js"></script>
-<!-- Toastr -->
-<script src="vitas/plugins/toastr/toastr.min.js"></script>
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
 <script src="vistas/dist/js/pages/dashboard.js"></script>
   <link rel="stylesheet" href="vistas/plugins/summernote/summernote-bs4.min.css">

@@ -80,7 +80,9 @@
 
                       <div class="row">
 
-                          <div class="col-lg">
+                          <div class="col-lg"> 
+
+                            <label  class="form-label">Dominio</label>
 
                               <div class="form-group">
                           
@@ -88,7 +90,7 @@
                                   
                                       <span class="input-group-text" id="basic-addon1"><i class="fas fa-edit"></i></span>
 
-                                      <input type="text" class="form-control input-lg" placeholder="Ingresar Dominio" id="dominio" required>
+                                      <input type="text" class="form-control input-lg"  id="dominio" required>
 
                                   </div> 
 
@@ -98,9 +100,11 @@
 
                       </div>
 
-                      <div class="row" style="text-align: center;">
+                      <div class="row">
 
                       <div class="col-lg">
+
+                      <label  class="form-label">Campaña ID</label>
 
                               <div class="form-group">
                     
@@ -108,7 +112,7 @@
                                   
                                       <span class="input-group-text" id="basic-addon1"><i class="fas fa-file-signature"></i></span>
 
-                                      <input type="text" class="form-control input-lg" placeholder="Ingresar Campaña ID" id="campana_id" required>
+                                      <input type="text" class="form-control input-lg" id="campana_id" required>
 
                                   </div>
 
@@ -123,13 +127,15 @@
 
                           <div class="col-lg">
 
+                          <label  class="form-label">Access Token</label>
+
                               <div class="form-group">
                     
                                   <div class="input-group">
                                   
                                       <span class="input-group-text" id="basic-addon1"><i class="fas fa-signature"></i></span>
 
-                                      <input type="text" class="form-control input-lg" placeholder="Ingresar Access Token" id="access_token" required>
+                                      <input type="text" class="form-control input-lg"  id="access_token" required>
 
                                   </div>
 

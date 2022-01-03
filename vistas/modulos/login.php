@@ -1,6 +1,4 @@
 
-<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-<script src="sweetalert2.all.min.js"></script>
 
 
 <div class=" container-fluid d-flex justify-content-center align-items-center" style="background:#E6E6E6; height: 100vh;">
