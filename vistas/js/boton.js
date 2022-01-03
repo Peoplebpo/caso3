@@ -4,7 +4,7 @@ $("#btnSubmitm").click(function() {
 
         $(this).prop("disabled", true); //deshabilitamos el botón
         $(this).html(
-        `<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Cargando Datos` //añadimos el spinner
+        `<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Enviando Mensajes SMS` //añadimos el spinner
         );
 
         $.ajax ({
@@ -15,7 +15,7 @@ $("#btnSubmitm").click(function() {
                 if (a=2){
                     $("#btnSubmitm").prop("disabled", false); 
                     $("#btnSubmitm").html(
-                    `<span></span> Datos Cargados` //añadimos el spinner
+                    `<span></span>:) SMS Enviados` //añadimos el spinner
                     );
                     $("#btnSubmitm").prop("disabled", true); 
                     $("#btnSubmitm").removeClass('btn-primary').addClass('btn-success');
