@@ -22,7 +22,7 @@
         $nombre_cliente      = (isset($_POST['nombre_cliente'])) ? $_POST['nombre_cliente'] : '';
         $apellido_cliente    = (isset($_POST['apellido_cliente'])) ? $_POST['apellido_cliente'] : '';
         $empresa             = (isset($_POST['empresa'])) ? $_POST['empresa'] : '';
-        $fecha_nacimiento    = (isset($_POST['fecha_nacimiento'])) ? $_POST['fecha_nacimiento'] : '';
+        $f_activacion    = (isset($_POST['f_activacion'])) ? $_POST['f_activacion'] : '';
         $edad                = (isset($_POST['edad'])) ? $_POST['edad'] : '';
         $sexo                = (isset($_POST['sexo'])) ? $_POST['sexo'] : '';
         $email               = (isset($_POST['email'])) ? $_POST['email'] : '';
@@ -63,7 +63,7 @@
         hora_ingreso          ='$hora',
         empresa               ='$empresa',
         apellido_cliente      ='$apellido_cliente',
-        fecha_nacimiento      ='$fecha_nacimiento',
+        f_activacion      ='$f_activacion',
         edad                  ='$edad',
         sexo                  ='$sexo',
         email                 ='$email',

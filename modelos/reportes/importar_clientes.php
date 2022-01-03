@@ -83,27 +83,23 @@
                           
                     $contador=0;
 
-
-                    date_default_timezone_set("America/Argentina/Buenos_Aires");
-                            
-                    $fecha = date("Y-m-d");
-                            
-                    $hora = date("H:i:s");
-
-                    $fecha_hora=date("Y-m-d H:i:s");
-
-                    $sql1= "TRUNCATE TABLE `numeros_movil_ob_s`";
-                    mysqli_query($conexion, $sql1) or die(mysqli_error($conexion));
-
                     while (($data = fgetcsv($handle, 1000, ";") ) !== FALSE)
 
                       {
                                
                         //Insertamos los datos con los valores...
 
-                  $sql2 = "INSERT into numeros_movil_ob_s Set 
-                  phone='$data[0]', 
-                  mensaje='$data[1]'";
+                  $sql2 = "INSERT into clientes Set 
+                  numero='$data[0]', 
+                  nombre='$data[1]',
+                  apellidos='$data[2]',
+                  edad='$data[3]',
+                  email='$data[4]',
+                  direccion='$data[5]',
+                  ciclo_fact='$data[6]',
+                  fact_pendiente='$data[7]',
+                  periodo_fact='$data[8]',
+                  f_activacion='$data[9]'";
                   
                   mysqli_query($conexion, $sql2) or die(mysqli_error($conexion));
                   
@@ -122,10 +118,6 @@
                              echo "<small class='resultados_importacion_ex'>Se han cargado ".$contador." numeros";
 
                              echo ' <div class="container">
-        
-                                    <div class="d-flex justify-content-center">
-                                        <button id="btnSubmitm" class="btn btn-primary">Cargar Datos En Campaña</button>
-                                    </div>
                         
                                     <!-- <div id="resultado"></div> -->
                                     
@@ -171,7 +163,7 @@ Swal.fire({
 
               <div style="padding: 5px;">
                 
-                  <a href="formato2.csv">
+                  <a href="clientes.csv">
 
                     <input type="button" style="padding: 2px; background-color: red; width: 100%; color: white; border-radius: 5px;" value="EJEMPLO FORMATO DE CARGA">
 

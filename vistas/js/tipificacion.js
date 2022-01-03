@@ -1,6 +1,6 @@
 var opciones = {
     "COBRANZA": ["", "Compromete Pago", "Pago Realizado"],
-    "NO COBRANZA": ["Desconoce deuda", "Sin Liquidez transitoria", "Sin Liquidez permanente", "Exige no ser vuelto a llamar (Lista No molestar)", 
+    "NO COBRANZA": ["", "Corta la Llamada", "Desconoce deuda", "Sin Liquidez transitoria", "Sin Liquidez permanente", "Exige no ser vuelto a llamar (Lista No molestar)", 
     "Titular no disponible - Mensaje Interlocutor válido", "Titular no disponible - Mensaje Interlocutor no válido"],
     "SIN CONTACTO": ["Buzón de Voz", "Sin Cobertura"],
 }

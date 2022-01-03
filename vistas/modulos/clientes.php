@@ -35,13 +35,17 @@
                                   <div class="col d-grid gap-2 d-md-flex justify-content-md-end">
 
                                       <button id="btnguardar" type="button" class="btn btn-info text-white"  data-bs-toggle="modal">Agregar Clientes</button>
+                                      <button type="button" class="btn btn-success text-white" data-bs-toggle="modal" data-bs-target="#subir_usuarios" style="float: left; margin-right: 10px;">Subir Clientes<i class="fas fa-file-upload" style="margin-left: 5px;"></i></button>
+                                      <?php
+                                        include 'vistas/modulos/modales/modal_cliente.php';
+                                      ?>
 
                                   </div>
-                      
 
                               </div>
 
                            </div>
+                           
                     </div>
                     
 
@@ -66,6 +70,7 @@
                                 <th id="id_u">CICLO FACTURACIÓN</th>
                                 <th id="id_u">FACTURACIÓN PENDIENTE</th>
                                 <th id="id_u">PERIODO FACTURACIÓN</th>
+                                <th id="id_u">FECHA DE ACTIVACIÓN</th>
                                 <th style="text-align: center;">ACCIONES</th>
 
                             </tr>
@@ -189,7 +194,7 @@
                                   
                                       <span class="input-group-text" id="basic-addon1"><i class="fas fa-pager"></i></span>
 
-                                      <input type="text" class="form-control input-lg" placeholder="Ingresar Edad" id="edad" required>
+                                      <input type="number" class="form-control input-lg" placeholder="Ingresar Edad" id="edad" required>
 
                                   </div>
 
@@ -280,7 +285,22 @@
                                   <span class="input-group-text" id="basic-addon1"><i class="fas fa-dumpster-fire"></i></span>
                                   <input type="text" class="form-control input-lg" placeholder="Periodo Facturación" id="periodo_fact" required>
                               
-                            </div>
+                            </div> 
+
+                          </div>
+                          
+                        </div>
+
+                        <div class="col-lg-6">
+
+                          <div class="form-group">
+                      
+                              <div class="input-group">
+                              
+                                  <span class="input-group-text" id="basic-addon1"><i class="fas fa-calendar-alt"></i></span>
+                                  <input type="date" class="form-control input-lg" placeholder="Fecha de Activación" id="f_activacion" required>
+                              
+                            </div> 
 
                           </div>
                           
