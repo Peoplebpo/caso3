@@ -23,7 +23,7 @@ if ($inc) {
 
         // integracion labsmobile
 
-        $auth_basic = base64_encode("crm@peoplebpo.com:Peoplebpo*21%");
+        $auth_basic = base64_encode("andres.galvis@peoplebpo.com:Peoplebpo*21%");
 
         $curl = curl_init();
 

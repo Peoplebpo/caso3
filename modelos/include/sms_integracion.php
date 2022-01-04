@@ -3,9 +3,9 @@ require('../conexion/conexion.php');
 $objeto = new Conexion();
 $conexion = $objeto->Conectar();
 
-$dominio         = (isset($_POST['dominio'])) ? $_POST['dominio'] : '';
-$campana_id      = (isset($_POST['campana_id'])) ? $_POST['campana_id'] : '';
-$access_token    = (isset($_POST['access_token'])) ? $_POST['access_token'] : '';
+$usuario  = (isset($_POST['usuario'])) ? $_POST['usuario'] : '';
+$clave    = (isset($_POST['clave'])) ? $_POST['clave'] : '';
+
 
 
 
@@ -26,7 +26,7 @@ switch($opcion){
     
     case 3:
 
-        $consulta = "UPDATE sms_integracion SET dominio='$dominio', campana_id='$campana_id', access_token='$access_token'";		
+        $consulta = "UPDATE sms_integracion SET usuario='$usuario', clave='$clave'";		
         $resultado = $conexion->prepare($consulta);
         $resultado->execute(); 
 
