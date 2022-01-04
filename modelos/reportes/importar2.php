@@ -124,9 +124,7 @@
                              echo ' <div class="container">
         
                                     <div class="d-flex justify-content-center">
-
                                         <button id="btnSubmitm" class="btn btn-primary">Enviar SMS</button>
-
                                     </div>
                         
                                     <!-- <div id="resultado"></div> -->

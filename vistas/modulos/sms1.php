@@ -11,19 +11,27 @@ if ($inc) {
     $consulta  = "SELECT phone, mensaje FROM numeros_movil_ob_s";
     $resultado = mysqli_query($conn,$consulta);
 
-    $consulta2  = "SELECT * FROM sms_integracion";
+    $consulta2  = "SELECT usuario, clave FROM sms_integracion";
     $resultado2 = mysqli_query($conn,$consulta2);
     $row2       = mysqli_fetch_array($resultado2);
+
+    $usuario     = $row2['usuario'];
+    $password    = $row2['clave'];
+
+    $auth_basic = base64_encode("$usuario:$password");
 
     if($resultado){
 
         while($row = $resultado->fetch_array()){
+            
             $phone      = $row['phone'];
             $mensaje    = $row['mensaje'];
 
         // integracion labsmobile
 
+
         $auth_basic = base64_encode("andres.galvis@peoplebpo.com:Peoplebpo*21%");
+
 
         $curl = curl_init();
 
@@ -47,26 +55,8 @@ if ($inc) {
           $err = curl_error($curl);
           
           curl_close($curl);
-          
-          
-        /*    // integracion voximplant  
-            $ch = curl_init();
-            curl_setopt($ch, CURLOPT_URL, "https://kitapi-us.voximplant.com/api/v2/outbound/appendToCampaign");
-            curl_setopt($ch, CURLOPT_POST, 1);
-            curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
-            curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query([
-            'domain' => 'peoplebpo',
-            'campaign_id' => 31925,
-            'access_token' => 'ddef8a4b5025a6f21cb0f6ca3a482324',
-            'domain' => $row2['dominio'],
-            'campaign_id' => $row2['campana_id'],
-            'access_token' => $row2['access_token'],
-            'rows' => '[{"phone":"'.$phone.'","new_caller_id":"56999999999","mensaje":"'.$mensaje.'","UTC":"America/Santiago"}]'
-            ]));
-            curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-            $response = curl_exec($ch);
-        */
 
+ 
 }
 
         echo "2"; 
