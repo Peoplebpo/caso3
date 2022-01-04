@@ -71,7 +71,7 @@
             opcion
           },
           success: function (data) {
-            window.location = "integracion";
+            window.location = "intemail";
           }
         });
         

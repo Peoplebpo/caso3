@@ -81,6 +81,32 @@
 
           <li class="nav-item">
             <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-sms"></i>
+                <p>ENVIO SMS
+                  <i class="right fas fa-angle-left"></i>
+                </p>
+            </a>
+            <ul class="nav nav-treeview">
+              
+              <li class="nav-item">
+                <a href="intsms" class="nav-link">
+                <i class="nav-icon fas fa-link"></i>
+                  <p>Integracion</p>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a href="subnumeros" class="nav-link">
+                <i class="nav-icon fas fa-sort-numeric-up-alt"></i>
+                  <p>Subir Números</p>
+                </a>
+              </li>
+              
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link">
               <i class="nav-icon fas fa-envelope-open-text"></i>
                 <p>ENVIO EMAIL
                   <i class="right fas fa-angle-left"></i>
@@ -107,7 +133,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="integracion" class="nav-link">
+                <a href="intemail" class="nav-link">
                 <i class="nav-icon fas fa-link"></i>
                   <p>Integracion</p>
                 </a>

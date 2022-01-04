@@ -122,7 +122,9 @@
           $_GET["ruta"]=="campañas"||
           $_GET["ruta"]=="plantillas"||
           $_GET["ruta"]=="enviar"||
-          $_GET["ruta"]=="integracion"||
+          $_GET["ruta"]=="intemail"||
+          $_GET["ruta"]=="intsms"||
+          $_GET["ruta"]=="subnumeros"||
           $_GET["ruta"]=="inicio"
         
           
