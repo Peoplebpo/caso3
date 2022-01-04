@@ -11,20 +11,23 @@ if ($inc) {
     $consulta  = "SELECT phone, mensaje FROM numeros_movil_ob_s";
     $resultado = mysqli_query($conn,$consulta);
 
-    $consulta2  = "SELECT * FROM sms_integracion";
+    $consulta2  = "SELECT usuario, clave FROM sms_integracion";
     $resultado2 = mysqli_query($conn,$consulta2);
     $row2       = mysqli_fetch_array($resultado2);
+
+    $usuario     = $row2['usuario'];
+    $password    = $row2['clave'];
+
+    $auth_basic = base64_encode("$usuario:$password");
 
     if($resultado){
 
         while($row = $resultado->fetch_array()){
+            
             $phone      = $row['phone'];
             $mensaje    = $row['mensaje'];
 
         // integracion labsmobile
-
-        //$auth_basic = base64_encode("crm@peoplebpo.com:Peoplebpo*21%");
-        $auth_basic = base64_encode("andres.galvis@peoplebpo.com:Peoplebpo*21%");
 
         $curl = curl_init();
 
