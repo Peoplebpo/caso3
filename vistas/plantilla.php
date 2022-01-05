@@ -119,7 +119,7 @@
           $_GET["ruta"]=="sucursal"||
           $_GET["ruta"]=="clientes"||
           $_GET["ruta"]=="canalpago"||
-          $_GET["ruta"]=="campañas"||
+          $_GET["ruta"]=="campanaemail"||
           $_GET["ruta"]=="plantillas"||
           $_GET["ruta"]=="enviar"||
           $_GET["ruta"]=="intemail"||

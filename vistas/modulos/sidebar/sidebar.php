@@ -108,7 +108,7 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="campañas" class="nav-link">
+                <a href="campanaemail" class="nav-link">
                   <i class="nav-icon fas fa-campground"></i>
                   <p>Campañas</p>
                 </a>
