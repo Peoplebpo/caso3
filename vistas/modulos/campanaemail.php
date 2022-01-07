@@ -1,6 +1,8 @@
 
-
-  <script type="text/javascript" src="vistas/js/"></script>
+<script type="text/javascript" src="vistas/js/email_campana.js"></script>
+<script type="text/javascript" src="vistas/js/agg_campana.js"></script>
+<script type="text/javascript" src="vistas/js/elim_campana.js"></script>
+<script type="text/javascript" src="vistas/js/subir.js"></script>
   <link rel="stylesheet" href="vistas/css/main.css">
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
@@ -9,12 +11,12 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>CAMPAÑAS</h1>
+            <h1>AGREGAR CAMPAÑA</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="inicio">Home</a></li>
-              <li class="breadcrumb-item active">Campañas</li>
+              <li class="breadcrumb-item active">Camapaña</li>
             </ol>
           </div>
         </div>
@@ -26,46 +28,46 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-12">
-            <div class="card">
-              <div class="card-header">
-                <h3 class="card-title">Campañas Email</h3>
+                <div class="card">
+                    <div class="card-header">
+                        
+                           <div class="container-fluid my-3">
 
-                <div class="container-fluid my-3">
+                              <div class="row">
 
-                  <div class="row">
+                                  <div class="col d-grid gap-2 d-md-flex justify-content-md-end">
 
-                    <div class="col d-grid gap-2 d-md-flex justify-content-md-end">
+                                      <button data-bs-target="#agregar"style="background-color: #4BB543;" type="button" class="btn text-white"  data-bs-toggle="modal">Agregar Campaña</button>
 
-                      <button type="button" class="btn btn-info text-white" data-bs-toggle="modal" data-bs-target="#modalagg" style="float: left; margin-right: 10px;">Subir Email<i class="fas fa-file-upload" style="margin-left: 5px;"></i></button>
+                                      <!-- <button id="btneliminar" type="button" class="btn btn-danger text-white"  data-bs-toggle="modal">Eliminar Campaña</button> -->
+                                      <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#eliminar">Eliminar Campaña</button>
+                                  
+                                      <button type="button" class="btn btn-info text-white" data-bs-toggle="modal" data-bs-target="#subir">Subir Números</button>
+                                  
+                                    </div>
+                      
 
-                      <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modalInt" style="margin-right: 10px;">Eliminar Campaña</button>
+                              </div>
 
-                      <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalInt">Agregar Campaña</button>
-                    
+                           </div>
                     </div>
-                  
-                  </div>   
+                    
 
-                </div>
-              
-              </div>
-            
+                <div class="container-fluid my-2">
 
-          <div class="container-fluid my-2">
+                    <div class="row">
 
-              <div class="row">
+                      <div class="table-responsive">
 
-                <div class="table-responsive">
-
-                    <table id="tablaUsuarios" class="table table-striped table-bordered" style="width:100%">
+                    <table id="tablaProductos" class="table table-striped table-bordered" style="width:100%">
 
                         <thead>
 
                             <tr>
-                               
-                                <th>EMAIL</th>  
-                                <th>CAMPAÑA</th> 
-                                <th>Acciones</th>
+                                <th id="id_u">ID</th>  
+                                <th>EMAIL</th>   
+                                <th>CAMPAÑA</th>
+                                <th style="text-align: center;">ACCIONES</th>
 
                             </tr>
 
@@ -77,12 +79,13 @@
 
               </div>
 
-          </div>
+
+                    </div>
 
 
-      </div>
-              <!-- /.card-body -->
-            </div>
+                </div>
+                    <!-- /.card-body -->
+                </div>
             
           </div>
           <!-- /.col -->
@@ -95,23 +98,151 @@
   </div>
   <!-- /.content-wrapper -->
 
-  <!-- modal boton agregar -->
+   <!-- Button trigger modal -->
 
-<div class="modal fade" id="modalagg" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="modalagg">Modal title</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Understood</button>
-      </div>
-    </div>
-  </div>
-</div>
-  <!--fin modal boton agregar -->
+
+   <!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <title>Agregar Usuario</title>
+  </head>
+  <body>
+
+
+        <!-- Modal agg campaña -->
+        <div class="modal fade" id="agregar" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="AgregarProductos" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                <div class="modal-header" style="background:#3FBF3F; color:white">
+                    <h5 class="modal-title" id="AgregarProductos">Agregar Camapaña</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                <form id="formproductos">
+
+                    <div class="form-group">
+                
+                        <div class="input-group">
+                        
+                            <span class="input-group-text" id="basic-addon1"><i class="fas fa-file-signature"></i></span>
+
+                            <input type="text" class="form-control input-lg" placeholder="Ingresar Nombre de Campaña" id="nombre" required>
+
+                        </div>
+
+                    </div>
+
+     
+                </div>
+                <div class="modal-footer">
+                <button type="submit" id="btnguardar" class="btn btn-success">Guardar</button>
+                </div>
+    
+                </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fin Modal agg campaña-->
+
+        <!-- modal eliminar campaña -->
+        <div class="modal fade" id="eliminar" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                <div class="modal-header" style="background:#ff4444; color:white">
+                    <h5 class="modal-title" >Eliminar Camapaña</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                <form>
+
+                    <div class="form-group">
+                
+                        <div class="input-group">
+                        
+                            <span class="input-group-text" id="basic-addon1"><i class="fas fa-eraser"></i></span>
+
+                                    <select name="nombre1" id="nombre1" class="form-select form-control " required>
+
+                                            <option value="0">Seleccione:</option>
+                                                <?php
+                                                    require('modelos/conexion/conexion_modal.php');
+                                                    $query3 = $mysqli3 -> query ("SELECT * FROM campana_email;");
+                                                    while ($valores3 = mysqli_fetch_array($query3)) {
+                                                    echo '<option value="'.$valores3['nombre'].'">'.$valores3['nombre'].'</option>';
+                                                    }
+
+                                                ?>
+
+                                    </select>
+                                    
+
+                        </div>
+
+                    </div>
+
+     
+                </div>
+                <div class="modal-footer">
+                  <button type="button" id="btneliminar" class="btn btn-danger">Eliminar</button>
+                </div>
+    
+                </form>
+                </div>
+            </div>
+        </div>
+        <!--Fin  modal eliminar campaña -->
+
+        <!-- modal subir -->
+        <div class="modal fade" id="subir" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                <div class="modal-header" style="background:#3F7FBF; color:white">
+                    <h5 class="modal-title" >Subir Emails</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                <form id="formproductos">
+
+                  <iframe src="modelos/reportes/agg_emailc.php" height="500" width="100%" scrolling="no" frameborder="0"></iframe>
+
+     
+                </div>
+                <div class="modal-footer">
+                  <button type="button" id="btnsubir" class="btn btn-info text-white">Subir Emails</button>
+                </div>
+    
+                </form>
+                </div>
+            </div>
+        </div>
+
+        <!--fin modal subir -->
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+  
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+   
+  </body>
+</html>
+
+
+ 
+
+    
