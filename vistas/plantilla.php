@@ -9,7 +9,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="vistas/dist/img/logo.png" />
-  <title>People BPO | Dashboard</title>
+  <title>Cobranza Cliente | Dashboard</title>
 
 
   <!-- Google Font: Source Sans Pro -->

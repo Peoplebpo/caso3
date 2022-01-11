@@ -85,7 +85,7 @@ return $string;
 	}  
 	  
 	header('Content-Type: application/vnd.ms-excel');
-	header("Content-Disposition: attachment; filename=ventas_en_frio_huerfanas.xls");  
+	header("Content-Disposition: attachment; filename=cobranza_cliente_huerfanas.xls");  
 	header("Pragma: no-cache");  
 	header("Expires: 0");  
 

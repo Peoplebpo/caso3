@@ -31,7 +31,7 @@
     "NOMBRE_CLIENTE" . "\t".
     "APELLIDO_CLIENTE" . "\t".
     "EMPRESA" . "\t".
-    "FECHA_NACIMIENTO" . "\t".
+    "FECHA_ACTIVACION" . "\t".
     "EDAD" . "\t".
     "SEXO" . "\t".
     "EMAIL" . "\t".
@@ -42,10 +42,6 @@
     "SUCURSAL" . "\t".
     "REGION" . "\t".
     "CIUDAD" . "\t".
-    "DIRECCION_ENTREGA" . "\t".
-    "TIPO_VENTA" . "\t".
-    "ORIGEN" . "\t".
-    "NUMERO_ORDEN" . "\t".
     "OBSERVACION" . "\t". 
     "SUB PRODUCTO" . "\t";
 	
@@ -115,7 +111,7 @@ return $string;
 	}  
 	  
 	header('Content-Type: application/vnd.ms-excel');
-	header("Content-Disposition: attachment; filename=ventas_en_frio.xls");  
+	header("Content-Disposition: attachment; filename=cobranza_cliente.xls");  
 	header("Pragma: no-cache");  
 	header("Expires: 0");  
 

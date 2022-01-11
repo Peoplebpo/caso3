@@ -202,7 +202,7 @@ if($rol<>"Admin"){
                             <span class="input-group-text" id="basic-addon1"><i class="fab fa-servicestack"></i></span> 
 
                             
-                                    <select name="servicios" id="servicio" class="form-select my-2 form-control input-lg" required>
+                                    <select name="servicios" id="servicio" class="form-select form-control input-lg" required>
 
                                             <option value="0">Seleccione:</option>
                                                 <?php
