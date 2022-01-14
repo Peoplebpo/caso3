@@ -13,7 +13,7 @@ $id = (isset($_POST['id'])) ? $_POST['id'] : '';
 switch($opcion){
 
     case 3:        
-        $consulta = "DELETE FROM email_campana WHERE id='$id' ";		
+        $consulta = "DELETE FROM email_campana WHERE campana='$campana' ";		
         $resultado = $conexion->prepare($consulta);
         $resultado->execute();                           
         break;

@@ -28,7 +28,10 @@ $(document).ready(function() {
                   icon: 'success',
                   title: 'Campaña eliminada con exito'
                 })
-                window.location = "campanaemail";        
+                .then(function(){
+                  window.location = "campanaemail";
+                });
+       
                }
             });	
         }

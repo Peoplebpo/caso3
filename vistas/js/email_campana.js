@@ -26,7 +26,8 @@ $(document).ready(function() {
    //Borrar
    $(document).on("click", ".btnBorrar", function(){
        fila = $(this);           
-       id = parseInt($(this).closest('tr').find('td:eq(0)').text()) ;		
+       campana = $(this).closest('tr').find('td:eq(2)').text() ;	
+       console.log(campana);	
        opcion = 3; //eliminar  
        Swal.fire({
          title: '¿Desea eliminar esta Campaña?',
@@ -43,7 +44,7 @@ $(document).ready(function() {
               url: "modelos/include/email_campana.php",
               type: "POST",
               datatype:"json",    
-              data:  {opcion:opcion, id:id},  
+              data:  {opcion:opcion, campana:campana},  
              
               success: function() {
                Swal.fire({
@@ -51,7 +52,9 @@ $(document).ready(function() {
                   icon: 'success',
                   title: 'Producto eliminado con exito'
                 })
-                  tablaProductos.row(fila.parents('tr')).remove().draw();                
+                  // tablaProductos.row(fila.parents('tr')).remove().draw();      
+                  tablaProductos.ajax.reload();
+
                }
             });	
         }

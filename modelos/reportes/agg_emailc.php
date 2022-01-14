@@ -18,7 +18,7 @@
       <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>  
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
       <link rel="stylesheet" href="vistas/plugins/fontawesome-free/css/all.min.css">
-      <script type="text/javascript" src="../../vistas/js/subir.js"></script>
+      <!-- <script type="text/javascript" src="../../vistas/js/subir.js"></script> -->
       
       
 
@@ -35,34 +35,34 @@
             
               <form id="form_ex" action='<?php echo $_SERVER["PHP_SELF"];?>' method='post' enctype="multipart/form-data">
 
-              <div class="form-group">
-                
-                <div class="input-group">
-                
-        
+                  <div class="form-group">
+                    
+                    <div class="input-group">
+                    
+            
+                          
+                                <select name="nombre1" id="nombre1" class="form-select form-control nombre1" required>
 
-                            <select name="nombre1" id="nombre1" class="form-select form-control" required>
+                                        <option value="0"><strong>Seleccione una Campaña:</strong></option>
+                                            <?php
+                                                require('../conexion/conexion_modal.php');
+                                                $query3 = $mysqli3 -> query ("SELECT * FROM campana_email;");
+                                                while ($valores3 = mysqli_fetch_array($query3)) {
+                                                echo '<option value="'.$valores3['nombre'].'">'.$valores3['nombre'].'</option>';
+                                                }
 
-                                    <option value="0">Seleccione:</option>
-                                        <?php
-                                            require('../conexion/conexion_modal.php');
-                                            $query3 = $mysqli3 -> query ("SELECT * FROM campana_email;");
-                                            while ($valores3 = mysqli_fetch_array($query3)) {
-                                            echo '<option value="'.$valores3['nombre'].'">'.$valores3['nombre'].'</option>';
-                                            }
+                                            ?>
 
-                                        ?>
+                                </select>
+                                
 
-                            </select>
-                            
+                    </div>
 
-                </div>
-
-            </div>
+                  </div>
               
                   <div class="posicion1_ex"> 
 
-                      <input class="seleccione" type='file' name='sel_file'>
+                      <input class="seleccione archivocsv" type='file' name='sel_file'>
 
                   </div>
 
@@ -88,6 +88,7 @@
               $basedatos ="cobranza_cliente"; 
               $conexion = mysqli_connect($servidor, $usuario, $clave) or die(mysqli_error($conexion)); 
               mysqli_select_db($conexion, $basedatos) or die(mysqli_error($conexion));
+              mysqli_set_charset($conexion,"utf8");
 
               if (!$conexion)
 
@@ -118,6 +119,12 @@
                           
                     $contador=0;
 
+              
+                    $campana = $_POST["nombre1"];
+                    
+                    
+
+
                     while (($data = fgetcsv($handle, 1000, ";") ) !== FALSE)
 
                       {
@@ -125,7 +132,8 @@
                         //Insertamos los datos con los valores...
 
                   $sql2 = "INSERT into email_campana Set 
-                  email='$data[0]'";
+                  email='$data[0]',
+                  campana='$campana'";
                   
                   mysqli_query($conexion, $sql2) or die(mysqli_error($conexion));
                   
@@ -195,7 +203,7 @@ Swal.fire({
 
       
             
-            <div class="d-flex justify-content-center align-items-center" style="margin: auto; width:770px;">
+            <div class="d-flex justify-content-center align-items-center" style="margin: auto; width:700px;">
               <img style="width:98%" src="https://i.ibb.co/rZ4wvYT/procedimiento.png" alt="">
             </div>
      
@@ -205,8 +213,6 @@ Swal.fire({
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-
-
 
 
 </body>

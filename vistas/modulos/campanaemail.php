@@ -42,7 +42,7 @@
                                       <!-- <button id="btneliminar" type="button" class="btn btn-danger text-white"  data-bs-toggle="modal">Eliminar Campaña</button> -->
                                       <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#eliminar">Eliminar Campaña</button>
                                   
-                                      <button type="button" class="btn btn-info text-white" data-bs-toggle="modal" data-bs-target="#subir">Subir Números</button>
+                                      <button type="button" class="btn btn-info text-white" data-bs-toggle="modal" data-bs-target="#subir">Subir Emails</button>
                                   
                                     </div>
                       
@@ -208,7 +208,7 @@
                 <div class="modal-content">
                 <div class="modal-header" style="background:#3F7FBF; color:white">
                     <h5 class="modal-title" >Subir Emails</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <a href="campanaemail"><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></a> 
                 </div>
                 <div class="modal-body">
 
@@ -218,10 +218,8 @@
 
      
                 </div>
-                <div class="modal-footer">
-                  <button type="button" id="btnsubir" class="btn btn-info text-white">Subir Emails</button>
-                </div>
-    
+
+        
                 </form>
                 </div>
             </div>
