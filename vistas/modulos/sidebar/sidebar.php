@@ -114,7 +114,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="plantillas" class="nav-link">
+                <a href="template" class="nav-link">
                 <i class="nav-icon fas fa-photo-video"></i>
                   <p>Plantillas</p>
                 </a>

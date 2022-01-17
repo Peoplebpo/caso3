@@ -8,7 +8,7 @@ $(document).ready(function () {
 		var fecha2 		= fecha.length;
 
 
-		if ($('#tipo_cliente').val() == 'chileno') {
+		if ($('#tipo_cliente').val() == 'Chile') {
 
 
 			if ($('#CustLoginIDAux').val() == '')
@@ -27,7 +27,7 @@ $(document).ready(function () {
 		
 		}
 		
-		if ($('#tipo_cliente').val() == 'extranjero'){
+		if ($('#tipo_cliente').val() == 'Colombia'){
 
 			if ($('#dni_cliente').val() == '')
 
@@ -56,6 +56,7 @@ $(document).ready(function () {
 			$('#fact_pendiente').val() == '' ||
 			$('#periodo_fact').val() == '' ||
 			$('#canal_pago').val() == '' ||
+			$('#tipo_cliente').val() == '' ||
 			$('#edad').val() == '') 
 			{
 				Swal.fire({

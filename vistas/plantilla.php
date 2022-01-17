@@ -126,6 +126,8 @@
           $_GET["ruta"]=="intemail"||
           $_GET["ruta"]=="intsms"||
           $_GET["ruta"]=="subnumeros"||
+          $_GET["ruta"]=="template"||
+          $_GET["ruta"]=="ingtemplate"||
           $_GET["ruta"]=="inicio"
         
           

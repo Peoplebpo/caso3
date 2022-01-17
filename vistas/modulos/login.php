@@ -40,7 +40,7 @@
              
               
               <div class="d-grid gap-2" style="width: 100% !important;">
-                <button type="submit" class="btn btn-primary btn-block" style="background-color:#C9D218 !important; color:#373050;"><strong>Ingresar</strong></button>
+                <button id="btn_login" type="submit" class="btn btn-primary btn-block" style="background-color:#C9D218 !important; color:#373050;"><strong>Ingresar</strong></button>
               </div>
               
             </div>

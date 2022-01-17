@@ -124,7 +124,7 @@ if (isset($_SESSION["user"])) {
 
                                         <label>Tipo Cliente</label>
                                         <select name="tipo_cliente" id="tipo_cliente" class="form-select my-2">
-                                            <option value="seleccione">Seleccione</option>
+                                            <option value=""></option>
                                             <option value="Chile">Chile</option>
                                             <option value="Colombia">Colombia</option>
                                         </select>

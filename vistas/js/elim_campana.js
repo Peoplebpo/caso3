@@ -6,7 +6,7 @@ $(document).ready(function() {
        opcion = 3; //eliminar  
        Swal.fire({
          title: '¿Desea eliminar esta Campaña?',
-         text: "Estos cambios no podran ser revertidos",
+         text: "Estos cambios no podrán ser revertidos",
          icon: 'warning',
          showCancelButton: true,
          position: 'top',
