@@ -1,23 +1,4 @@
-<?php
-
-if (isset($_SESSION["user"])) {
-
-  $usuario     = $_SESSION["user"];
-  $rut_usuario = $_SESSION["rut_usuario"];
-  $servicio    = $_SESSION["servicio"];
-  $nombre      = $_SESSION["nombre"];
-  $empresa    = "peoplebpo";
-} else {
-
-  header('location: ../../../login/session.html');
-
-  exit;
-}
-
-?>
-
-
-
+<script type="text/javascript" src="vistas/js/TinyMCE.js"></script>
 <!-- Content Wrapper. Contains page content -->
 <div class="content-wrapper">
   <!-- Content Header (Page header) -->

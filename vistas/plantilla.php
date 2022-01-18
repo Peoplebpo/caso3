@@ -36,7 +36,8 @@
 <script src="vistas/plugins/jquery/jquery.min.js"></script>
 <!-- jQuery UI 1.11.4 -->
 <script src="vistas/plugins/jquery-ui/jquery-ui.min.js"></script>
-
+<!-- TinyMCE  -->
+<script src="vistas/plugins/tinymce/tinymce.min.js"></script>
 <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
 <script>
   $.widget.bridge('uibutton', $.ui.button)
