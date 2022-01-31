@@ -129,6 +129,7 @@
           $_GET["ruta"]=="subnumeros"||
           $_GET["ruta"]=="template"||
           $_GET["ruta"]=="ingtemplate"||
+          $_GET["ruta"]=="datostemplate"||
           $_GET["ruta"]=="inicio"
         
           

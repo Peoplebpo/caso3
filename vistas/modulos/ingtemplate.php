@@ -33,9 +33,7 @@
 
 
                     <a href="template"><button type="button" class="btn btn-success text-white"><i class="fas fa-hand-point-left" style="margin-right: 5px;"></i>Regresar</button></a>
-
-
-
+                  
                   </div>
                 </div>
               </div>
@@ -70,7 +68,7 @@
                         <div class="col-lg-6">
                           <div class="form-group">
                             <label>Descripción:</label>
-                            <textarea class="form-control my-2"  name="descripcion" id="descripcion" style="height: 100px"></textarea>
+                            <textarea class="form-control my-2"  name="descripcion" id="descripcion" style="height: 100px; resize:none;"></textarea>
                           </div>
                         </div>
 
@@ -115,10 +113,6 @@
 </div>
 <!-- /.content-wrapper -->
 
-<script src="vistas/js/rut.js"></script>
-<script src="vistas/js/tipificacion.js"></script>
-<script src="vistas/js/ingresar_registro.js"></script>
-<script src="vistas/js/buscar.js"></script>
+<script src="vistas/js/aggtemplate.js"></script>
 
-<script src="vistas/lib/jquery.js"></script>
-<script src="vistas/js/select.js"></script>
+
