@@ -1,5 +1,3 @@
-
-
 <script type="text/javascript" src="vistas/js/agregar_numero5.js"></script>
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">

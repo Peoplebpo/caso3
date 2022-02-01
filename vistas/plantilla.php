@@ -76,13 +76,13 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
  
 
-  
+  <script src="vistas/js/app.js"></script>
 
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed">
     
-    
+
 
       <div class="preloader flex-column justify-content-center align-items-center">
           <div class="spinner-border text-primary" role="status">

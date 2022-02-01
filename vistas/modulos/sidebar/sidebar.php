@@ -1,4 +1,5 @@
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
+
     <!-- Brand Logo -->
     <a href="inicio" class="brand-link"  style="text-decoration: none">
       <img src="vistas/dist/img/logo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
@@ -332,4 +333,8 @@
       <!-- /.sidebar-menu -->
     </div>
     <!-- /.sidebar -->
+
+    
   </aside>
+
+  
