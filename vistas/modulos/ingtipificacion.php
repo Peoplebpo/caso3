@@ -331,3 +331,49 @@ if (isset($_SESSION["user"])) {
 <script src="vistas/lib/jquery.js"></script>
 <script src="vistas/js/select.js"></script>
 
+
+      <!-- inicio boton llamada -->
+
+      <script>
+        window.VoximplantKitSettings = {
+            // Visual settings
+            visualSettings: {
+                drawMode: 'full', // Draw mode: full - floating Softphone, inline - fixed Softphone.
+
+                side: 'right', // When the draw mode is set as full, it is necessary to define the side right | left
+
+                cssSelector: '#vox-kit-softphone' // CSS-selector of the block where Softphone is drawn when the draw mode is set as inline
+
+            },
+            // Authentication settings
+            authSettings: {
+                api_url: `kit-us.voximplant.com`, // Define the region of the account kit-eu.voximplant.com | kit-us.voximplant.com
+                domain: `peoplebpo`, // Define the name of the account
+                email: `emailagente@peoplebpo.com`, // Define the user email
+                type: `password` // Authentication type. Currently, the system supports only the password type (username and password authentication)	
+            }
+
+
+        };
+
+        const settings = window.VoximplantKitSettings
+	if (settings && typeof window.VoximplantKit === 'object') {
+		window.VoximplantKit.init(settings)
+	}
+
+// Connection with the platform has been established
+window.VoximplantKit.App.on('ConnectionEstablished', () => {
+
+
+
+})
+
+
+console.log(Object.values(_customdata.queueVariables));
+
+
+    </script>
+
+
+  <!-- fin boton llamada -->
+
