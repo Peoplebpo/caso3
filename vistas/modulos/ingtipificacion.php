@@ -49,7 +49,7 @@ if (isset($_SESSION["user"])) {
             <div class="card">
               <div class="card-header">
 
-                <h3 class="card-title">Ingresar Registros</h3>
+                <h3 class="card-title"><strong style="color: #dc3545;">RECUERDA:</strong> <br> Para que ingresen llamadas debes iniciar sesión y estar en modo <strong style="color: #28a745;">READY.</strong></h3>
 
                 <div class="container-fluid my-3">
                   <div class="row">
@@ -327,6 +327,7 @@ if (isset($_SESSION["user"])) {
   <script src="vistas/js/tipificacion.js"></script>
   <script src="vistas/js/ingresar_registro.js"></script> 
   <script src="vistas/js/buscar.js"></script> 
+  <!-- <script src="vistas/js/resetipificacion.js"></script>  -->
   
 <script src="vistas/lib/jquery.js"></script>
 <script src="vistas/js/select.js"></script>
