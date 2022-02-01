@@ -2,6 +2,7 @@ $(document).ready(function () {
 
 
 	$('#btn_ingresar').click(function () {
+		window.onbeforeunload = "null";
 		var contenido = tinymce.get("contenido").getContent();
 		if (
 			$('#nombre').val() == '' ||
@@ -40,6 +41,7 @@ $(document).ready(function () {
 							console.log(a)
 							console.log('Agregado')
 							window.location = "template";
+							
 						}
 
 					}

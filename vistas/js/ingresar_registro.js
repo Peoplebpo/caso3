@@ -207,7 +207,7 @@ $(document).ready(function () {
 					return false;
 				}else {
 
-					$('#btn_ingresar').attr("disabled", true);
+					$('#btn_ingresar').attr("disabled", false);
 	
 					var datos = $('#frmingresar').serialize();
 	
@@ -224,7 +224,8 @@ $(document).ready(function () {
 							console.log(a);
 	
 	
-							window.location = "administrador";
+							$('#frmingresar').trigger('reset');
+							// window.location = "administrador";
 	
 	
 						}

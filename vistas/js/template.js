@@ -105,9 +105,9 @@ var id
                   title: 'Template eliminado con exito'
                   
                 })
-                // .then(function(){
-                //   window.location = "template";
-                // });       
+                .then(function(){
+                  window.location = "template";
+                });       
                }
             });	
         }

@@ -40,13 +40,7 @@
           $rol=$_SESSION["rol"];
           if($rol=="Admin"){
             echo 
-        '<li class="nav-item">
-            <a href="https://kit-us.voximplant.com/login" class="nav-link" target="_blank">
-              <i class="nav-icon fas fa-phone-square-alt"></i>
-              <p>LLAMADAS</p>
-            </a>
-         </li>
-
+        '
         <li class="nav-item">
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-box-open"></i>
