@@ -80,7 +80,7 @@ if (isset($_SESSION["user"])) {
 
                                         <div class="col">
 
-                                        <label>Session_id</label>
+                                        <label>Identificador LLamada</label>
                                         <input name="session_id" type="" id="session_id" class="form-control my-2" value="" size="32"/>
 
                                         
@@ -362,15 +362,9 @@ if (isset($_SESSION["user"])) {
 		window.VoximplantKit.init(settings)
 	}
 
-// Connection with the platform has been established
-window.VoximplantKit.App.on('ConnectionEstablished', () => {
+// siempre estara maximizado
+window.VoximplantKit.Widget.maximize()
 
-
-
-})
-
-
-console.log(Object.values(_customdata.queueVariables));
 
 
     </script>

@@ -23132,7 +23132,7 @@
     e.exports = n
   },
   "3fd9": function (e, t) {
-    var n = '<img width="198" height="36" src="vistas/img/logo-2.png"> </img> ';
+    var n = '<img width="198" height="36" src="vistas/img/iz_3.png"> </img> ';
     e.exports = n
   },
   4010: function (e, t, n) {
