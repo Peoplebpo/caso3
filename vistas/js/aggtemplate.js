@@ -2,7 +2,8 @@ $(document).ready(function () {
 
 
 	$('#btn_ingresar').click(function () {
-		window.onbeforeunload = "null";
+		
+		
 		var contenido = tinymce.get("contenido").getContent();
 		if (
 			$('#nombre').val() == '' ||
