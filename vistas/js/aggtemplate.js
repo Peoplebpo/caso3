@@ -3,6 +3,7 @@ $(document).ready(function () {
 
 	$('#btn_ingresar').click(function () {
 		
+		
 		var contenido = tinymce.get("contenido").getContent();
 		if (
 			$('#nombre').val() == '' ||
