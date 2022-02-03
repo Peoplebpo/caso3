@@ -367,6 +367,17 @@ window.VoximplantKit.Widget.maximize()
 
 
 
+window.VoximplantKit.Call.on('CallConnected', e => {
+
+//const identificador = [nombre_del_objeto]._customData.queueVariables.identificador
+//const telefono      = [nombre_del_objeto]._customData.queueVariables.telefono
+
+//console.log("estoy dentro" + identificador);
+
+})
+
+
+
     </script>
 
 
