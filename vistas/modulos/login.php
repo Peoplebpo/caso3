@@ -1,65 +1,76 @@
+<!doctype html>
+<html lang="en">
 
- <script type="text/javascript" src="vistas/js/login.js"></script>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<div class=" container-fluid d-flex justify-content-center align-items-center" style="background:#E6E6E6; height: 100vh;">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="vistas/css/main.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+  <link href="http://fonts.cdnfonts.com/css/geometria" rel="stylesheet">
+
+  <title>login</title>
+</head>
+
+<body>
+  <div class="container-fluid d-flex justify-content-center align-items-center" id="cont">
 
 
-<div class="login-box">
+    <form id="form" method="post">
 
-      <div class="login-logo" style="margin-top: -230px;">
+      <img src="vistas/img/logo.png" alt="" class="container-fluid d-flex justify-content-center align-items-center img-fluid" style="width: 250px;">
 
-          <img src="vistas/img/logo-3.png" class="img-responsive" style="text-align:center; width:80%;">
+      <div class="container">
 
-      </div>
-      
-      <div class="card card-outline card-primary"  style="margin-top: -150px;">
-        <div class="card-header text-center">
-          <a href="" class="h2"><b>COBRANZA</b></a>
+        <div class="mb-3 input-group" style="margin-top: 30px;">
+          <span style="background-color: white; border-radius: 25px;" class="input-group-text" id="span"><i style="color: #C8D118;" class="fa fa-user form-control-feedback"></i>
+            <input name="user" id="user" type="text" class="form-control shadow-none" placeholder="Usuario" style="font-family: geometria, sans-serif;">
+
         </div>
-        <div class="card-body">
-      
 
-          <form  method="post">
-            <div class="input-group mb-3">
-              <input type="text" class="form-control" placeholder="Usuario" name="user" id="user">
-              <div class="input-group-append">
-                <div class="input-group-text">
-                  <span class="fas fa-envelope"></span>
-                </div>
-              </div>
-            </div>
-            <div class="input-group mb-3">
-              <input type="password" class="form-control" placeholder="Password" name="password" id="password">
-              <div class="input-group-append">
-                <div class="input-group-text">
-                  <span class="fas fa-lock"></span>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-             
-              
-              <div class="d-grid gap-2" style="width: 100% !important;">
-                <button id="btn_login" type="submit" class="btn btn-primary btn-block" style="background-color:#C9D218 !important; color:#373050;"><strong>Ingresar</strong></button>
-              </div>
-              
-            </div>
-          </form>
+        <div class="mb-3 input-group" style="margin-top: 30px;">
+          <span style="background-color: white; border-radius: 25px;" class="input-group-text"><i style="color: #C8D118;" class="fa fa-lock"></i>
+            <input name="password" id="password" type="password" class="form-control shadow-none" style="font-family: geometria, sans-serif; color: red ;" placeholder="Contraseña">
 
-          <?php
-          $login = new ControladorLogin();
-          $login->clogin();
-          
-          ?>
-          
         </div>
-      
+
+
+        <div class="d-grid gap-2">
+          <button id="btn_login" style="margin-top: 25px; border-radius: 20px !important; font-family: geometria, sans-serif; font-size: 1.5rem; background-color:#C8D118 !important; color: #322A46;" class="btn btn-primary shadow-none" type="submit">Ingresar</button>
+
+        </div>
       </div>
-   
-</div>
+
+    </form>
+
+    <?php
+    $login = new ControladorLogin();
+    $login->clogin();
+
+    ?>
 
 
-</div>
+  </div>
 
 
 
+
+  </div>
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="vistas/js/login.js"></script>
+</body>
+
+</html>
