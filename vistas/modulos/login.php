@@ -17,7 +17,7 @@
   <title>login</title>
 </head>
 
-<body>
+<body  style="background-color: #363050;">
   <div class="container-fluid d-flex justify-content-center align-items-center" id="cont">
 
 
