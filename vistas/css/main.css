@@ -292,3 +292,33 @@
     align-content: center;
     margin-left: 30px;
 }
+
+#cont{
+    background-image: url(../img/fondo.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 750px;
+
+}
+
+
+#form{
+    background-color: rgba(22, 0, 49, 0.2);
+    border-radius: 10%;
+    padding: 50px;
+
+}
+
+input[type="text"],
+input[type="password"]{
+    font-size: 20px;
+    width: 82%;
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.2) !important;
+    
+    
+}
