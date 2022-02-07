@@ -63,7 +63,7 @@ class TableData {
         for ( $i=0 ; $i<count($columns) ; $i++ ) {
             if ( isset($_GET['bSearchable_'.$i]) && $_GET['bSearchable_'.$i] == "true" && $_GET['sSearch_'.$i] != '' ) {
                 if ( $sWhere == "" ) {
-                    $sWhere = "WHERE ";
+                    $sWhere = "WHERE";
                 }
                 else {
                     $sWhere .= " AND ";
