@@ -1,4 +1,14 @@
+$(function() {
+    $('#form').disableAutoFill({
+        passwordField: '#password'
+    });
+});
+
+
+
+
 $(document).ready(function () {
+
 
     $('#btn_login').click(function () {
 
