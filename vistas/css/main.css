@@ -1,324 +1,357 @@
 /* datos tabla grabaciones */
 #fecha_tabla {
-    display: none;   
+  display: none;
 }
 
 #ingreso_tabla {
-   display: none;   
+  display: none;
 }
 
 #hora_tabla {
-    display: none;   
- }
+  display: none;
+}
 
 #tipo_tabla {
-    display: none;   
+  display: none;
 }
 #id_c {
-    display: none;   
+  display: none;
 }
 
 #obse {
-    display: none;   
+  display: none;
 }
 
 #campana_tabla {
-    display: none;   
+  display: none;
 }
 
 #producto_tabla {
-    display: none;   
+  display: none;
 }
 
 #tipo_tabla {
-    display: none;   
+  display: none;
 }
 
 #rut_tabla {
-    display: none;   
+  display: none;
 }
 
 #dni_tabla {
-    display: none;   
+  display: none;
 }
 
 #frellamada_tabla {
-    display: none;   
+  display: none;
 }
 
 #hrellamada_tabla {
-    display: none;   
+  display: none;
 }
 
 /* datos tabla greferidos */
 #numero_tabla {
-    display: none;   
+  display: none;
 }
 
 #email_tabla {
-    display: none;   
+  display: none;
 }
 
 #fecha_tabla {
-    display: none;   
+  display: none;
 }
 
 #ingreso_tabla {
-   display: none;   
+  display: none;
 }
 
 #hora_tabla {
-    display: none;   
- }
+  display: none;
+}
 
 #tipo_tabla {
-    display: none;   
+  display: none;
 }
 
 #campana_tabla {
-    display: none;   
+  display: none;
 }
 
 #producto_tabla {
-    display: none;   
+  display: none;
 }
 
 #rut_tabla {
-    display: none;   
+  display: none;
 }
 
 #frellamada_tabla {
-    display: none;   
+  display: none;
 }
 
 #hrellamada_tabla {
-    display: none;   
+  display: none;
 }
 
 #estado_tabla {
-    display: none;   
+  display: none;
 }
 
-.login-margin{
-    margin-top: 8rem !important;
+.login-margin {
+  margin-top: 8rem !important;
 }
 
 /* datos tabla greferidos */
 #fecha_tabla {
-    display: none;   
+  display: none;
 }
 
 #ingreso_tabla {
-   display: none;   
+  display: none;
 }
 
 #hora_tabla {
-    display: none;   
- }
+  display: none;
+}
 
 #tipo_tabla {
-    display: none;   
+  display: none;
 }
 
 #campana_tabla {
-    display: none;   
+  display: none;
 }
 
 #producto_tabla {
-    display: none;   
+  display: none;
 }
 
 #rut_tabla {
-    display: none;   
+  display: none;
 }
 
 #frellamada_tabla {
-    display: none;   
+  display: none;
 }
 
 #hrellamada_tabla {
-    display: none;   
+  display: none;
 }
-
 
 /* datos tabla script */
 
-#n_agente{
-    display: none;   
+#n_agente {
+  display: none;
 }
 
-#r_agente{
-    display: none;   
+#r_agente {
+  display: none;
 }
 
-#campana{
-    display: none;   
+#campana {
+  display: none;
 }
 
-#pro{
-    display: none;   
+#pro {
+  display: none;
 }
 
-#t_cliente{
-    display: none;   
+#t_cliente {
+  display: none;
 }
 
-#dni_tcliente{
-    display: none;   
+#dni_tcliente {
+  display: none;
 }
 
-#n_cliente{
-    display: none;   
+#n_cliente {
+  display: none;
 }
 
-#f_ingreso{
-    display: none;   
+#f_ingreso {
+  display: none;
 }
 
-#h_ingreso{
-    display: none;   
-} 
-
-#empresa_t{
-    display: none;   
+#h_ingreso {
+  display: none;
 }
 
-#a_cliente{
-    display: none;   
+#empresa_t {
+  display: none;
 }
 
-#f_nacimiento{
-    display: none;   
+#a_cliente {
+  display: none;
 }
 
-#edad_t{
-    display: none;   
+#f_nacimiento {
+  display: none;
 }
 
-#sexo_t{
-    display: none;   
+#edad_t {
+  display: none;
 }
 
-#t_contacto{
-    display: none;   
+#sexo_t {
+  display: none;
 }
 
-#email_t{
-    display: none;   
+#t_contacto {
+  display: none;
 }
 
-#direccion_t{
-    display: none;   
+#email_t {
+  display: none;
 }
 
-#accion_t{
-    display: none;   
+#direccion_t {
+  display: none;
 }
 
-#cantidad_t{
-    display: none;   
+#accion_t {
+  display: none;
 }
 
-#f_entrega{
-    display: none;   
+#cantidad_t {
+  display: none;
 }
 
-#sucursal_t{
-    display: none;   
+#f_entrega {
+  display: none;
 }
 
-#region_t{
-    display: none;   
+#sucursal_t {
+  display: none;
 }
 
-#ciudad_t{
-    display: none;   
+#region_t {
+  display: none;
 }
 
-#d_entrega{
-    display: none;   
+#ciudad_t {
+  display: none;
 }
 
-#t_venta{
-    display: none;   
+#d_entrega {
+  display: none;
 }
 
-#origen_t{
-    display: none;   
+#t_venta {
+  display: none;
 }
 
-#n_orden{
-    display: none;   
+#origen_t {
+  display: none;
 }
 
-#r_cliente{
-    display: none;   
+#n_orden {
+  display: none;
+}
+
+#r_cliente {
+  display: none;
 }
 
 /* datos tabla usuarios */
 
-#id_u{
-    display: none;   
+#id_u {
+  display: none;
 }
 
-#correo_us{
-    display: none;   
+#correo_us {
+  display: none;
 }
 
-#password_us{
-    display: none;   
+#password_us {
+  display: none;
 }
 
-#rut_us{
-    display: none;   
+#rut_us {
+  display: none;
 }
 
-#servicio_us{
-    display: none;   
+#servicio_us {
+  display: none;
 }
 
-#fecha_g{
-    display: none;   
+#fecha_g {
+  display: none;
 }
-#rut_g{
-    display: none;   
-}
-
-#checkUser{
-    position: relative;
-    width: 70%;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    margin-left: 30px;
+#rut_g {
+  display: none;
 }
 
-#cont{
-    background-image: url(../img/fondo.png);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    background-size: cover;
-    height: 750px;
-
+#checkUser {
+  position: relative;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-left: 30px;
 }
 
-
-#form{
-    background-color: rgba(22, 0, 49, 0.2);
-    border-radius: 10%;
-    padding: 50px;
-
+#cont {
+  background-image: url(../img/fondo.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 750px;
 }
 
-input[type="text"],
-input[type="password"]{
-    font-size: 20px;
-    width: 82%;
-    padding: 10px;
-    border: none;
-    border-radius: 25px;
-    background-color: rgba(255, 255, 255, 0.2) !important;
-    
-    
+#form {
+  background-color: rgba(22, 0, 49, 0.2);
+  border-radius: 10%;
+  padding: 50px;
+}
+
+#lopass {
+  font-size: 20px;
+  width: 82%;
+  padding: 10px;
+  border: none;
+  border-radius: 25px;
+  background-color: rgba(255, 255, 255, 0.2) !important;
+}
+#louser {
+  font-size: 20px;
+  width: 82%;
+  padding: 10px;
+  border: none;
+  border-radius: 25px;
+  background-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+#lm {
+  background-color: #c8d118;
+  color: #322a46;
+}
+
+.upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.btnf {
+  color: white;
+  background-color: #322a46;
+  border-radius: 25px;
+  width: 250px;
+  height: 40px;
+}
+
+.upload-btn-wrapper input[type="file"] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+.textd a {
+  text-decoration: none;
+  
 }

@@ -8,12 +8,11 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Subir Números</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="inicio">Home</a></li>
-              <li class="breadcrumb-item active">Subir números</li>
+              <li class="breadcrumb-item active">Importar números</li>
             </ol>
           </div>
         </div>
@@ -21,11 +20,11 @@
     </section>
 
     <!-- Main content -->
-    <section class="content">
+    <section class="content d-flex justify-content-center align-items-center">
          <!-- SELECT2 EXAMPLE -->
-         <div class="card card-default card-info">
-            <div class="card-header">
-              <h3 class="card-title">Importar Números</h3>
+         <div  class="card card-default" style="width: 90%;">
+            <div class="card-header d-flex justify-content-center align-items-center" style="background-color: #C8D118;">
+              <h1 style="color:#322A46; font-family: geometria, sans-serif;" class="card-title text-center"><strong>IMPORTAR NÚMEROS</strong> </h1>
             </div>
            
             <div class="card-body">

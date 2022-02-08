@@ -29,7 +29,7 @@
 
         <div class="mb-3 input-group" style="margin-top: 30px;">
           <span style="background-color: white; border-radius: 25px;" class="input-group-text" id="span"><i style="color: #C8D118;" class="fa fa-user form-control-feedback"></i>
-            <input name="user" id="user" type="text" class="form-control shadow-none" placeholder="Usuario" style="font-family: geometria, sans-serif;">
+            <input id="louser" name="user" id="user" type="text" class="form-control shadow-none" placeholder="Usuario" style="font-family: geometria, sans-serif;">
 
         </div>
 
