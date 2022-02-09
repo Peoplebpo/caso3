@@ -23,7 +23,7 @@
 
       <div class="modal-content">
         <div class="modal-header" id="lm" style="font-family: geometria, sans-serif;">
-          <h5 class="modal-title justify-content-center align-items-center"><strong>IMPORTAR CLIENTES</strong> </h5>
+          <h5 class="modal-title justify-content-center align-items-center"><strong>IMPORTAR EMAILS</strong> </h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">

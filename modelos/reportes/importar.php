@@ -48,12 +48,12 @@
 
           <div class="upload-btn-wrapper col-md-6 d-flex justify-content-center align-items-center posicion1_ex">
             <button class="btn btnf"><strong>Seleccionar archivo</strong> </button>
-            <input   type='file' name='sel_file'>
+            <input type='file' name='sel_file'>
           </div>
 
           <div class="col-md-6 d-flex justify-content-center align-items-center posicion2_ex">
-            <input style="width: 250px; height: 40px; border: none; background-color: #C8D118; color: #322A46; border-radius: 20px;"  class="imagen_cargar_ex" type='submit' name='submit' value="Cargar" src="vistas/img/cargar.png">
-            
+            <input style="width: 250px; height: 40px; border: none; background-color: #C8D118; color: #322A46; border-radius: 20px;" class="imagen_cargar_ex" type='submit' name='submit' value="Cargar" src="vistas/img/cargar.png">
+
           </div>
 
 
@@ -165,28 +165,25 @@
 
     <div style="margin: auto;  margin-top: 30px;" class="textd">
 
-      <a href="formato.csv">
+      <div type="button" style="text-align: center; border: none; font-family: geometria, sans-serif; padding: 5px; background-color: #C8D118; color: #322A46; border-radius: 5px; width: 100%;">
+        <h5><strong>Procedimiento de Carga</strong></h5>
 
-        <div type="button" style="text-align: center; border: none; font-family: geometria, sans-serif; padding: 5px; background-color: #C8D118; color: #322A46; border-radius: 5px; width: 100%;" > 
-        <h5><strong>EJEMPLO DE FORMATO DE CARGA</strong></h5>
-        
       </div>
 
 
-      </a>
-
       <div style="background-color: white; padding: 20px; color:#322A46;">
         <p>
-         <strong>Paso 1:</strong>  Descargar el formato desde la sección <strong>subir registros.</strong>  <br> <br>
+          <strong>Paso 1:</strong> Descargar el formato de ejemplo desde este <strong><a style="color:#322A46 !important;" href="formato.csv">LINK.</a></strong> <br> <br>
 
-         <strong>Paso 2:</strong> En el archivo descargado con extensión CSV, debes ingresar los registros según el orden que indique la primera fiela. <br> <br>
+          <strong>Paso 2:</strong> En el archivo descargado con extensión CSV, debes ingresar los registros según el orden que indique la primera fila. <br> <br>
 
-         <strong>Paso 3:</strong> Una vez ingresados los datos debes eliminar la primera fila. <br> <br>
+          <strong>Paso 3:</strong> Una vez ingresados los datos debes eliminar la primera fila. <br> <br>
 
-         <strong>Paso 4:</strong> Guardar el archivo editado, este debe quedar con la misma extensión CSV. <br> <br>
+          <strong>Paso 4:</strong> Guardar el archivo editado, este debe quedar con la misma extensión CSV. <br> <br>
 
-         <strong>Paso 5:</strong> En la sección <strong>subir registros,</strong> debes presionar el botón Seleccionar archivo, luego seleccionamos el archivo creado y editado, por último presionar el botón <strong>cargar.</strong><br>
+          <strong>Paso 5:</strong> Debes presionar el botón <strong>Seleccionar archivo,</strong> luego seleccionamos el archivo creado y editado, por último presionar el botón <strong>cargar.</strong><br>
         </p>
+
 
       </div>
 
