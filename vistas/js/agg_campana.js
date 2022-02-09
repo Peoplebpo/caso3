@@ -23,9 +23,6 @@ $(document).ready(function () {
         } else {
           $("#formproductos")[0].reset();
           Swal.fire("Felicidades", "Campaña Agregada con Exito", "success")
-          .then(function(){
-            window.location = "campanaemail";
-          });
           
         }
       },

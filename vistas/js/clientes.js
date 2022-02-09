@@ -60,7 +60,7 @@ $(document).ready(function() {
               }
               
            });			        
-       $('#modalCRUD').modal('hide');											     			
+       $('#modalCRUD12').modal('hide');											     			
    });
            
    //para limpiar los campos antes de dar de Alta una Persona
@@ -69,7 +69,7 @@ $(document).ready(function() {
        id=null;
   
        $("#formproductos").trigger("reset");
-       $('#modalCRUD').modal('show');	    
+       $('#modalCRUD12').modal('show');	    
 
    });
    
@@ -103,10 +103,10 @@ $(document).ready(function() {
        $("#f_activacion").val(f_activacion);
       
      
-       $(".modal-header").css("background-color", "#007bff");
-       $(".modal-header").css("color", "white" );
-       $(".modal-title").text("Editar Clientes");		
-       $('#modalCRUD').modal('show');		 
+       $(".modal-header1").css("background-color", "#007bff");
+       $(".modal-header1").css("color", "white" );
+       $(".modal-title1").text("Editar Clientes");		
+       $('#modalCRUD12').modal('show');		 
        
    });
 

@@ -113,7 +113,7 @@ $(document).ready(function(){
       });
 
       $("#numero").val("");
-      $('#ingresar').modal('hide');
+      // $('#ingresar').modal('hide');
 
       
     }
