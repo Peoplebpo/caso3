@@ -204,10 +204,10 @@
 
         <!-- modal subir -->
         <div class="modal fade" id="subir" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-dialog  modal-lg">
                 <div class="modal-content">
-                <div class="modal-header" style="background:#3F7FBF; color:white">
-                    <h5 class="modal-title" >Subir Emails</h5>
+                <div class="modal-header" id="lm" style="font-family: geometria, sans-serif;">
+                    <h5 class="modal-title justify-content-center align-items-center"><strong>IMPORTAR EMAILS</strong> </h5>
                     <a href="campanaemail"><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></a> 
                 </div>
                 <div class="modal-body">
