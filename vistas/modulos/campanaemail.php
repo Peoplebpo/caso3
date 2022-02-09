@@ -42,8 +42,11 @@
                                       <!-- <button id="btneliminar" type="button" class="btn btn-danger text-white"  data-bs-toggle="modal">Eliminar Campaña</button> -->
                                       <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#eliminar">Eliminar Campaña</button>
                                   
-                                      <button type="button" class="btn btn-info text-white" data-bs-toggle="modal" data-bs-target="#subir">Subir Emails</button>
-                                  
+                                      <button type="button" class="btn btn-info text-white" data-bs-toggle="modal" data-bs-target="#subir_email">Subir Emails</button>
+                                
+                                      <?php
+                                        include 'vistas/modulos/modales/modal_email.php';
+                                      ?>
                                     </div>
                       
 
@@ -203,27 +206,7 @@
         <!--Fin  modal eliminar campaña -->
 
         <!-- modal subir -->
-        <div class="modal fade" id="subir" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
-            <div class="modal-dialog  modal-lg">
-                <div class="modal-content">
-                <div class="modal-header" id="lm" style="font-family: geometria, sans-serif;">
-                    <h5 class="modal-title justify-content-center align-items-center"><strong>IMPORTAR EMAILS</strong> </h5>
-                    <a href="campanaemail"><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></a> 
-                </div>
-                <div class="modal-body">
 
-                <form id="formproductos">
-
-                  <iframe src="modelos/reportes/agg_emailc.php" height="500" width="100%" scrolling="no" frameborder="0"></iframe>
-
-     
-                </div>
-
-        
-                </form>
-                </div>
-            </div>
-        </div>
 
         <!--fin modal subir -->
 
