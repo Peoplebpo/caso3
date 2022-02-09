@@ -1,2 +1,2 @@
-3024575517;andres;ramirez;22;foalvarezg@ufpso.edu.co;medellin;ciclo 1;fact 1;periodo 1;2021-12-1
-3173621671;fabian;alvaez;25;foalvarezg@ufpso.edu.co;medellin;ciclo 2;fact 2;periodo 2;2021-12-3
+numero,nombre,apellidos,edad,email,direccion,ciclo_fact,fact_pendiente,periodo_fact,f_activacion
+302,Andres,Ramirez,22,pruebagmail.com,Colombia,Ciclo 1,Fact 1,Periodo 1,01/12/2021
