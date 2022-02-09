@@ -1,2 +1,2 @@
-numero,nombre,apellidos,edad,email,direccion,ciclo_fact,fact_pendiente,periodo_fact,f_activacion
-302,Andres,Ramirez,22,pruebagmail.com,Colombia,Ciclo 1,Fact 1,Periodo 1,01/12/2021
+numero;nombre;apellidos;edad;email;direccion;ciclo_fact;fact_pendiente;periodo_fact;f_activacion
+302;Andres;Ramirez;22;pruebagmail.com;Colombia;Ciclo 1;Fact 1;Periodo 1;01-12-2021
