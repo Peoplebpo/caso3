@@ -29,13 +29,13 @@
 
         <div class="mb-3 input-group" style="margin-top: 30px;">
           <span style="background-color: white; border-radius: 25px;" class="input-group-text" id="span"><i style="color: #C8D118;" class="fa fa-user form-control-feedback"></i>
-            <input id="louser" name="user" id="user" type="text" class="form-control shadow-none" placeholder="Usuario" style="font-family: geometria, sans-serif;">
+            <input  name="user" id="user" type="text" class="form-control shadow-none louser" placeholder="Usuario" style="font-family: geometria, sans-serif;">
 
         </div>
 
         <div class="mb-3 input-group" style="margin-top: 30px;">
           <span style="background-color: white; border-radius: 25px;" class="input-group-text"><i style="color: #C8D118;" class="fa fa-lock"></i>
-            <input name="password" id="password" type="text" class="form-control shadow-none" style="font-family: geometria, sans-serif; color: blue ;" placeholder="Contraseña">
+            <input   name="password" id="password" type="text" class="form-control shadow-none lopass" style="font-family: geometria, sans-serif; color: blue ;" placeholder="Contraseña">
 
         </div>
 
