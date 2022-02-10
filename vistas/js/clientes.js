@@ -72,7 +72,18 @@ $(document).ready(function() {
        $('#modalCRUD12').modal('show');	    
 
    });
-   
+
+   // inicio cerrar ventana modal subir clientes
+
+   $("#cerrar_sub_cliente").click(function(){
+
+    tablaProductos.ajax.reload(null, false);
+
+});
+
+   // fin cerrar ventana modal subir clientes
+
+
    //Editar        
    $(document).on("click", ".btnEditar", function(){		        
        opcion = 2;//editar

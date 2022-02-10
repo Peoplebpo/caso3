@@ -24,7 +24,7 @@
       <div class="modal-content">
         <div class="modal-header" id="lm" style="font-family: geometria, sans-serif;">
           <h5 class="modal-title justify-content-center align-items-center"><strong>IMPORTAR CLIENTES</strong> </h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <button type="button" id="cerrar_sub_cliente" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
           <iframe src="modelos/reportes/importar_clientes.php" height="500" width="770px" scrolling="no" frameborder="0"></iframe>
