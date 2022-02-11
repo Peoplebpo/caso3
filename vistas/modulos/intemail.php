@@ -2,6 +2,7 @@
 
   <script type="text/javascript" src="vistas/js/email_integracion.js"></script>
   <link rel="stylesheet" href="vistas/css/main.css">
+  <link href="http://fonts.cdnfonts.com/css/geometria" rel="stylesheet">
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
@@ -25,7 +26,7 @@
     <section class="content">
          <!-- SELECT2 EXAMPLE -->
          <div class="card card-default card-info">
-            <div class="card-header">
+            <div class="card-header" id="lm" style="font-family: geometria, sans-serif;">
               <h3 class="card-title">Email Masivo</h3>
             </div>
            
@@ -139,7 +140,7 @@
 
                          <div class="modal-footer">
 
-                            <button type="submit" id="btnguardar" class="btn btn-success">Guardar</button>
+                            <button style="width: 100px; border-radius: 20px !important; font-family: geometria, sans-serif; font-size: 1rem; background-color:#322a46 !important; color: #C8D118;" type="submit" id="btnguardar" class="btn shadow-none">Guardar</button>
 
                         </div>
 

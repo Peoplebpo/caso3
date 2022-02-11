@@ -22,6 +22,7 @@ class ControladorLogin {
                   
                   {
                       $_SESSION["validar_session"]="ok";
+                      $_SESSION["id"]=$response["id"];/////////////////obtencion de id del usuario para la session
                       $_SESSION["user"]=$response["usuario"]; 
                       $_SESSION["password"]=$response["password"]; 
                       $_SESSION["nombre"]=$response["nombre"]; 

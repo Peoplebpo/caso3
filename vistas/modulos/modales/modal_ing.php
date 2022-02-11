@@ -8,6 +8,7 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link href="http://fonts.cdnfonts.com/css/geometria" rel="stylesheet">
 
     <title>IMPORTAR NUMEROS</title>
   </head>
@@ -20,8 +21,8 @@
     <div class="modal" tabindex="-1" id="ingresar" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="staticBackdropLabel">AGREGAR NUMERO</h5>
+                    <div class="modal-header" id="lm" style="font-family: geometria, sans-serif;">
+                        <h5 class="modal-title">AGREGAR NUMERO</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
@@ -30,13 +31,13 @@
                             <div class="row">
                             <div class="col">
 
-                                <label>Numero</label>
+                                <label>Número</label>
                                 <input type="number" name="numero" id="numero" class="form-control my-2" placeholder="EJEMPLO: 9583249564">
 
                             </div>
 
                             </div>
-                            <button type="submit" class="btn btn-success w-100 my-2" id="btningresar">AGREGAR NUMERO</button>
+                            <button style="border-radius: 20px !important; font-family: geometria, sans-serif; font-size: 1rem; background-color:#322a46 !important; color: #C8D118;" type="submit" class="btn shadow-none w-100 my-2" id="btningresar">Agregar número</button>
                         </div>  
                             </form>
 

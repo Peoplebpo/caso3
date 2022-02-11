@@ -13,7 +13,7 @@ switch($opcion){
   
 
     case 3:        
-        $consulta = "DELETE FROM campana_email WHERE nombre='$nombre' ";		
+        $consulta = "DELETE FROM campana_email WHERE id='$nombre' ";		
         $resultado = $conexion->prepare($consulta);
         $resultado->execute();                           
         break;

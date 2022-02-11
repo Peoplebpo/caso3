@@ -1,8 +1,17 @@
 $(document).ready(function() {
+  
    
     //Borrar
    $("#btneliminar").click(function(){           
-       nombre = $('#nombre1').val(); 		
+       nombre = $('#nombre1').val(); 	
+       if(nombre==0){
+        Swal.fire({
+          position: 'top',
+          icon: 'error',
+          title: 'Seleccione una opción'
+        })
+       }else{
+       console.log(nombre)	
        opcion = 3; //eliminar  
        Swal.fire({
          title: '¿Desea eliminar esta Campaña?',
@@ -23,21 +32,32 @@ $(document).ready(function() {
              
               success: function(a) {
                 console.log(a);
-               Swal.fire({
+                Swal.fire({
                   position: 'top',
                   icon: 'success',
                   title: 'Campaña eliminada con exito'
                 })
-                .then(function(){
-                  window.location = "campanaemail";
-                });
-       
+                opcion=5
+                $.ajax({
+                  url: "modelos/include/crud.php",
+                  type: "POST",
+                  datatype: "json",
+                  data: {opcion},
+                  success:function(data) {
+                    console.log(data)
+                    let taskss = JSON.parse(data);
+                    let templates = '<option value="0">Seleccione:</option>';
+                    taskss.forEach(tasks => {
+                      templates += `<option value="${tasks.id}">${tasks.nombre}</option>`
+                    })
+                    $('#nombre1').html(templates)
+                  }
+                })
                }
             });	
         }
 
        })
-                     
-  
+      }
     });
    });

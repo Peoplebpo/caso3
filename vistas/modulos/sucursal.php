@@ -1,6 +1,7 @@
 
 <script type="text/javascript" src="vistas/js/sucursal.js"></script>
   <link rel="stylesheet" href="vistas/css/main.css">
+  <link href="http://fonts.cdnfonts.com/css/geometria" rel="stylesheet">
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
@@ -34,7 +35,7 @@
 
                                   <div class="col d-grid gap-2 d-md-flex justify-content-md-end">
 
-                                      <button data-bs-target="#btnguardar" id="btnguardar" type="button" class="btn btn-info text-white"  data-bs-toggle="modal">Agregar Sucursal</button>
+                                      <button id="btnguardar" type="button" class="btn btn-info text-white">Agregar Sucursal</button>
 
                                   </div>
                       
@@ -111,7 +112,7 @@
         <div class="modal fade" id="modalCRUD" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="AgregarProductos" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
-                <div class="modal-header" style="background:#3c8dbc; color:white">
+                <div class="modal-header" id="lm" style="font-family: geometria, sans-serif;">
                     <h5 class="modal-title" id="AgregarProductos">Agregar Sucursal</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
@@ -134,7 +135,7 @@
      
                 </div>
                 <div class="modal-footer">
-                <button type="submit" id="btnguardar" class="btn btn-success">Guardar</button>
+                <button style="width: 100px; border-radius: 20px !important; font-family: geometria, sans-serif; font-size: 1rem; background-color:#322a46 !important; color: #C8D118;" type="submit" id="btnguardar" class="btn shadow-none">Guardar</button>
                 </div>
     
                 </form>

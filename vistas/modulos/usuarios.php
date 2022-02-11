@@ -116,7 +116,8 @@ if($rol<>"Admin"){
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="vistas/css/main.css">
+  <link href="http://fonts.cdnfonts.com/css/geometria" rel="stylesheet">
     <title>Agregar Usuario</title>
   </head>
   <body>
@@ -126,8 +127,8 @@ if($rol<>"Admin"){
         <div class="modal fade" id="modalCRUD" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="Agregar Usuario" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
-                <div class="modal-header" style="background:#3c8dbc; color:white">
-                    <h5 class="modal-title" id="Agregar Usuario">Agregar Usuario</h5>
+                <div class="modal-header" id="lm" style="font-family: geometria, sans-serif;">
+                    <h5 class="modal-title" id="Agregar Usuario"></h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -251,7 +252,7 @@ if($rol<>"Admin"){
      
                 </div>
                 <div class="modal-footer">
-                <button type="submit" id="btnguardar" class="btn btn-dark">Guardar</button>
+                <button style="width: 100px; border-radius: 20px !important; font-family: geometria, sans-serif; font-size: 1rem; background-color:#322a46 !important; color: #C8D118;" type="submit" id="btnguardar" class="btn shadow-none">Guardar</button>
                 </div>
     
                 </form>

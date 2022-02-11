@@ -70,9 +70,7 @@ $(document).ready(function() {
        opcion = 1; //alta           
        id=null;
        $("#formUsuarios1").trigger("reset");
-       $(".modal-header").css( "background-color", "#17a2b8");
-       $(".modal-header").css( "color", "white" );
-       $(".modal-title").text("Alta de Usuario");
+       $(".modal-title").text("Agregar Usuarios");
        $('#modalCRUD').modal('show');	    
    });
    
@@ -102,8 +100,7 @@ $(document).ready(function() {
        $("#rut_usuario").val(rut_usuario);
        $("#servicio").val(servicio);
        $("#rol").val(rol);
-       $(".modal-header").css("background-color", "#007bff");
-       $(".modal-header").css("color", "white" );
+
        $(".modal-title").text("Editar Usuario");		
        $('#modalCRUD').modal('show');		 
        

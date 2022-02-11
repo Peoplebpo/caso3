@@ -1,6 +1,7 @@
 
 <script type="text/javascript" src="vistas/js/subproducto.js"></script>
   <link rel="stylesheet" href="vistas/css/main.css">
+  <link href="http://fonts.cdnfonts.com/css/geometria" rel="stylesheet">
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
@@ -113,8 +114,8 @@
         <div class="modal fade" id="modalCRUD" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="AgregarProductos" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
-                <div class="modal-header" style="background:#3c8dbc; color:white">
-                    <h5 class="modal-title" id="AgregarProductos">Agregar Tipo Venta</h5>
+                <div class="modal-header" id="lm" style="font-family: geometria, sans-serif;">
+                    <h5 class="modal-title" id="AgregarProductos"></h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -129,7 +130,7 @@
                                 <span class="input-group-text" id="basic-addon1"><i class="fab fa-servicestack"></i></span> 
 
                             
-                                    <select name="nombre" id="nombre" class="form-select my-2 form-control input-lg" required>
+                                    <select name="nombre" id="nombre" class="form-select  form-control input-lg" required>
 
                                             <option value="0">Seleccione:</option>
                                                 <?php
@@ -151,7 +152,7 @@
                 
                         <div class="input-group">
                         
-                            <span class="input-group-text" id="basic-addon1"><i class="fab fa-product-hunt"></i></span>
+                            <span class="input-group-text" id="basic-addon1"><i class="fas fa-file-signature"></i></span>
 
                             <input type="text" class="form-control input-lg" placeholder="Ingresar Sub Producto " id="s_producto" required>
 
@@ -174,7 +175,7 @@
      
                 </div>
                 <div class="modal-footer">
-                  <button type="submit" id="btnguardar" class="btn btn-success">Guardar</button>
+                  <button style="width: 100px; border-radius: 20px !important; font-family: geometria, sans-serif; font-size: 1rem; background-color:#322a46 !important; color: #C8D118;" type="submit" id="btnguardar" class="btn shadow-none">Guardar</button>
                 </div>
     
                 </form>

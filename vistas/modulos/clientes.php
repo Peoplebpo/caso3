@@ -9,7 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <script type="text/javascript" src="vistas/js/clientes.js"></script>
   <link rel="stylesheet" href="vistas/css/main.css">
-    <title>Agregar Tipo Venta</title>
+  <link href="http://fonts.cdnfonts.com/css/geometria" rel="stylesheet">
   </head>
   <body>
 
@@ -70,7 +70,7 @@
 
                       <div class="table-responsive">
 
-                    <table id="tablaProductos" class="table table-striped table-bordered" style="width:100%">
+                    <table id="tablaClientes" class="table table-striped table-bordered" style="width:100%">
 
                         <thead>
 
@@ -124,16 +124,16 @@
 
 
         <!-- Modal -->
-        <div class="modal fade" id="modalCRUD" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="AgregarProductos" aria-hidden="true">
+        <div class="modal fade" id="modalclientes" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="AgregarProductos" aria-hidden="true">
             <div class="modal-dialog modal-lg modal-dialog-centered">
                 <div class="modal-content">
-                <div class="modal-header" style="background:#3c8dbc; color:white">
-                    <h5 class="modal-title" id="AgregarProductos">Agregar Tipo Venta</h5>
+                <div class="modal-header" id="lm" style="font-family: geometria, sans-serif;">
+                    <h5 class="modal-title">Agregar Clientes</h5> 
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
 
-                <form id="formproductos">
+                <form id="formclientes">
 
                       <div class="row">
 
@@ -315,7 +315,7 @@
 
                 <div class="modal-footer">
 
-                  <button type="submit" id="btnguardar" class="btn btn-success">Guardar</button>
+                  <button style="width: 100px; border-radius: 20px !important; font-family: geometria, sans-serif; font-size: 1rem; background-color:#322a46 !important; color: #C8D118;" type="submit" id="btnguardar" class="btn shadow-none">Guardar</button>
 
                 </div>
     

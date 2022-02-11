@@ -1,9 +1,16 @@
 <?php 
         require('../conexion/conexion.php');
 
-        include('../../../hora_oficial/zona_horaria.php');
+        //////////////// iniciamos session para obtener el id del usuario logeado
+        session_start();
+        if (isset($_SESSION["user"])) {
+            $idU     = $_SESSION["id"];
+            $rol     = $_SESSION["rol"];
+        }
 
-        date_default_timezone_set($zona_horaria);
+        /*include('../../../hora_oficial/zona_horaria.php');
+
+        date_default_timezone_set($zona_horaria);*/
 
         $hora = date("h:i:s");
         $fecha = date("Y-m-d");
@@ -41,8 +48,6 @@
         $periodo_fact        = (isset($_POST['periodo_fact'])) ? $_POST['periodo_fact'] : '';
         $fecha_cpago         = (isset($_POST['fecha_cpago'])) ? $_POST['fecha_cpago'] : '';
         $canal_pago          = (isset($_POST['canal_pago'])) ? $_POST['canal_pago'] : '';
-         
-
 
   
 
@@ -76,6 +81,7 @@
         ciudad                ='$ciudad',
         observacion           ='$observacion',
         user                  ='$user',
+        id_userC              ='$idU',
         sub_producto          ='$sub_producto',
         ciclo_fact            ='$ciclo_fact',
         fact_pendiente        ='$fact_pendiente',
@@ -86,16 +92,4 @@
 
         echo mysqli_query($conn,$sSQL); 
             
-       
-
-
-        // INGRESAR DATOS A LA BASE
-
-        
-
-
-        
-
-        
-
 ?>

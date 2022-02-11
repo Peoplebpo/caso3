@@ -66,7 +66,7 @@
 
                 <div class="table-responsive">
 
-                    <table id="employee_data" class="table table-striped table-bordered" style="width:100%">
+                    <table id="listaNegra" class="table table-striped table-bordered" style="width:100%">
 
                         <thead>
 
