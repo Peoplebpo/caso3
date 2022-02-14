@@ -8,6 +8,8 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link href="http://fonts.cdnfonts.com/css/geometria" rel="stylesheet">
+    <link rel="stylesheet" href="../css/main.css">
 
     <title>Grabaciones</title>
   </head>
@@ -20,7 +22,7 @@
 <div class="modal fade" id="modalCRUD" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
     <div class="modal-dialog modal-xl" role="document">
         <div class="modal-content">
-            <div class="modal-header">
+            <div class="modal-header" id="lm" style="font-family: geometria, sans-serif;">
             <h5 class="modal-title" id="exampleModalLabel">COBRANZA CLIENTE HUERFANAS</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
@@ -32,22 +34,22 @@
 
                     <div class="col-lg-4">
                     <div class="form-group">
-                    <label for="" class="col-form-label"><strong>SESSION ID</strong></label>
-                    <input type="text" class="form-control" id="session_id" style="background: #C9D218 !important;" disabled>
+                    <label for="" class="col-form-label">SESSION ID</label>
+                    <input type="text" class="form-control" id="session_id" style=" border-radius: 20px; background-color: #363050!important; color:white;" disabled>
                     </div>
 
                     </div>
                     <div class="col-lg-4">
                     <div class="form-group">
-                    <label for="" class="col-form-label"><strong>PHONE</strong></label>
-                    <input type="text" class="form-control" id="phone" style="background: #C9D218 !important;" disabled>
+                    <label for="" class="col-form-label">PHONE</label>
+                    <input type="text" class="form-control" id="phone" style=" border-radius: 20px; background-color: #363050!important; color:white;" disabled>
                     </div> 
                     </div>    
 
                     <div class="col-lg-4">
                     <div class="form-group">
-                    <label for="" class="col-form-label"><strong>CAMPAÑA</strong></label>
-                    <input type="text" class="form-control" id="campana_h" style="background: #C9D218 !important;" disabled>
+                    <label for="" class="col-form-label">CAMPAÑA</label>
+                    <input type="text" class="form-control" id="campana_h" style=" border-radius: 20px; background-color: #363050!important; color:white;" disabled>
                     </div> 
                     </div> 
 
@@ -60,22 +62,22 @@
 
                       <div class="col-lg-4">
                       <div class="form-group">
-                      <label for="" class="col-form-label"><strong>FECHA Y HORA DE GRABACION</strong></label>
-                      <input type="text" class="form-control" id="fecha_grabacion" style="background: #C9D218 !important;" disabled>
+                      <label for="" class="col-form-label">FECHA Y HORA DE GRABACION</label>
+                      <input type="text" class="form-control" id="fecha_grabacion" style=" border-radius: 20px; background-color: #363050!important; color:white;" disabled>
                       </div>
 
                       </div>
                       <div class="col-lg-4">
                       <div class="form-group">
-                      <label for="" class="col-form-label"><strong>FECHA</strong></label>
-                      <input type="text" class="form-control" id="fecha" style="background: #C9D218 !important;" disabled>
+                      <label for="" class="col-form-label">FECHA</label>
+                      <input type="text" class="form-control" id="fecha" style=" border-radius: 20px; background-color: #363050!important; color:white;" disabled>
                       </div> 
                       </div>    
 
                 </div>
 
               <div style="text-align: center; margin-top: 20px;" data-toggle="tooltip" title="Reproducir">
-              <h5><strong>GRABACION DE LA LLAMADA</strong></h5>
+              <h5>GRABACION DE LA LLAMADA</h5>
               
               <audio controls id="valor">
                    <source src=""  type="audio/ogg">

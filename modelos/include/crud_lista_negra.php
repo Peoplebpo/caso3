@@ -15,28 +15,35 @@ $published_at = (isset($_POST['published_at'])) ? $_POST['published_at'] : '';
 $opcion = (isset($_POST['opcion'])) ? $_POST['opcion'] : '';
 $id = (isset($_POST['id'])) ? $_POST['id'] : '';
 
-$codigo_area= "56";
+$codigo_area = "56";
 
 
-switch($opcion){
+switch ($opcion) {
 
     case 1:
 
-        $consulta = "INSERT INTO l_negras (numero, published_at, created_by, updated_by) VALUES('$codigo_area$numero', '$fecha', '1', '1') ";          
+        $consulta = "INSERT INTO l_negras (numero, published_at, created_by, updated_by) VALUES('$codigo_area$numero', '$fecha', '1', '1') ";
         $resultado = $conexion->prepare($consulta);
-        $resultado->execute();      
-        $data=$resultado->fetchAll(PDO::FETCH_ASSOC);
+        $resultado->execute();
+        $data = $resultado->fetchAll(PDO::FETCH_ASSOC);
         break;
 
     case 2:
 
-        $consulta = "DELETE FROM l_negras WHERE id='$id' ";		
+        $consulta = "DELETE FROM l_negras WHERE id='$id' ";
         $resultado = $conexion->prepare($consulta);
         $resultado->execute();
-        $data="exito";                       
-        break;    
+        $data = "exito";
+        break;
 
+    case 3:
+
+        $consulta = "DELETE FROM  l_negras";
+        $resultado = $conexion->prepare($consulta);
+        $resultado->execute();
+        $data = "exito";
+        break;
 }
 
-print json_encode($data, JSON_UNESCAPED_UNICODE);//envio el array final el formato json a AJAX
-$conexion=null;
+print json_encode($data, JSON_UNESCAPED_UNICODE); //envio el array final el formato json a AJAX
+$conexion = null;

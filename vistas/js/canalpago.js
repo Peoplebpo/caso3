@@ -83,6 +83,7 @@ $(document).ready(function() {
           position: 'top',
           confirmButtonColor: '#3085d6',
           cancelButtonColor: '#d33',
+          cancelButtonText: 'Cancelar',
           confirmButtonText: 'Borrar'
         }).then((result) => { 
           if (result.isConfirmed) {            

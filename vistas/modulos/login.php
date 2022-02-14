@@ -41,7 +41,7 @@
 
 
         <div class="d-grid gap-2">
-          <button id="btn_login" style="margin-top: 25px; border-radius: 20px !important; font-family: geometria, sans-serif; font-size: 1.5rem; background-color:#C8D118 !important; color: #322A46;" class="btn btn-primary shadow-none" type="submit"><strong>Ingresar</strong> </button>
+          <button id="btn_login" style="margin-top: 25px; border-radius: 20px !important; font-family: geometria, sans-serif; font-size: 1.5rem; background-color:#C8D118 !important; color: #322A46;" class="btn shadow-none" type="submit"><strong>Ingresar</strong> </button>
 
         </div>
       </div>

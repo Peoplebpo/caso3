@@ -28,7 +28,7 @@
           <div class="col-12">
             <div class="card">
               <div class="card-header">
-                <h3 class="card-title">LISTA NEGRA</h3>
+               
                
 
                 <div class="container-fluid my-3">
@@ -48,6 +48,8 @@
                       <?php
                         include 'vistas/modulos/modales/modal_ing.php';
                       ?>
+
+                      <button style="margin-left: 10px;" type="button" class="btn btn-danger" data-bs-toggle="modal" id='eliminar_ln'>Eliminar Registros</button>
                     
 
 

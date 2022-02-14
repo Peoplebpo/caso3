@@ -29,6 +29,7 @@ $(document).ready(function () {
       position: "top",
       confirmButtonColor: "#3085d6",
       cancelButtonColor: "#d33",
+      cancelButtonText: "Cancelar",
       confirmButtonText: "Borrar",
     }).then((result) => {
       if (result.isConfirmed) {
@@ -45,6 +46,43 @@ $(document).ready(function () {
               position: "top",
               icon: "success",
               title: "Numero eliminado con exito",
+            });
+
+            // listaNegra.row(fila.parents('tr')).remove().draw();
+            $("#listaNegra").DataTable().ajax.reload();
+          },
+        });
+      }
+    });
+  });
+
+  $(document).on("click", "#eliminar_ln", function () {
+
+    opcion = 3; //eliminar
+    Swal.fire({
+      title: "¿Desea eliminar todos los Registros?",
+      text: "Estos cambios no podran ser revertidos",
+      icon: "warning",
+      showCancelButton: true,
+      position: "top",
+      confirmButtonColor: "#3085d6",
+      cancelButtonColor: "#d33",
+      cancelButtonText: "Cancelar",
+      confirmButtonText: "Borrar",
+    }).then((result) => {
+      if (result.isConfirmed) {
+        $.ajax({
+          url: "modelos/include/crud_lista_negra.php",
+          type: "POST",
+          datatype: "json",
+          data: {
+            opcion: opcion,
+          },
+          success: function () {
+            Swal.fire({
+              position: "top",
+              icon: "success",
+              title: "Registros Eliminados con exito",
             });
 
             // listaNegra.row(fila.parents('tr')).remove().draw();
@@ -109,5 +147,4 @@ $(document).ready(function () {
     }
   });
 
-  /*fin boton agregar*/
 });

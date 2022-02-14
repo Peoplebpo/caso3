@@ -136,7 +136,7 @@
      
                 </div>
                 <div class="modal-footer">
-                <button style="width: 250px; border-radius: 20px !important; font-family: geometria, sans-serif; font-size: 1.5rem; background-color:#322a46 !important; color: #C8D118;" type="submit" id="btnguardar" class="btn shadow-none">Guardar</button>
+                <button style="width: 100px; border-radius: 20px !important; font-family: geometria, sans-serif; font-size: 1rem; background-color:#322a46 !important; color: #C8D118;" type="submit" id="btnguardar" class="btn shadow-none">Guardar</button>
                 </div>
     
                 </form>
