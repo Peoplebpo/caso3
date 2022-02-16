@@ -150,7 +150,7 @@ class TableData {
                 $sOrder = "";
             }
         }
-        if($rol=='Admin'){$sWhere = "";}else{$sWhere = "WHERE id_userC=$idU";}
+        if($rol=='Admin' || $rol=='Sup'){$sWhere = "";}else{$sWhere = "WHERE id_userC=$idU";}
         if ( isset($_GET['sSearch']) && $_GET['sSearch'] != "" ) {
             if ( $sWhere == "" ) {
                 $sWhere .= "WHERE (";
