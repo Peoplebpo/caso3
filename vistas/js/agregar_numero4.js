@@ -26,7 +26,6 @@ $(document).ready(function () {
       text: "Estos cambios no podran ser revertidos",
       icon: "warning",
       showCancelButton: true,
-      position: "top",
       confirmButtonColor: "#3085d6",
       cancelButtonColor: "#d33",
       cancelButtonText: "Cancelar",
@@ -43,7 +42,6 @@ $(document).ready(function () {
           },
           success: function () {
             Swal.fire({
-              position: "top",
               icon: "success",
               title: "Numero eliminado con exito",
             });
@@ -64,7 +62,6 @@ $(document).ready(function () {
       text: "Estos cambios no podran ser revertidos",
       icon: "warning",
       showCancelButton: true,
-      position: "top",
       confirmButtonColor: "#3085d6",
       cancelButtonColor: "#d33",
       cancelButtonText: "Cancelar",
@@ -80,7 +77,6 @@ $(document).ready(function () {
           },
           success: function () {
             Swal.fire({
-              position: "top",
               icon: "success",
               title: "Registros Eliminados con exito",
             });
@@ -114,7 +110,6 @@ $(document).ready(function () {
 
     if ($("#numero").val() == "") {
       Swal.fire({
-        position: "top",
         icon: "error",
         title: "ERROR",
         text: "Complete todos los campos",
@@ -132,9 +127,12 @@ $(document).ready(function () {
         },
         success: function (respuesta) {
           Swal.fire({
-            position: "top",
             icon: "success",
             title: "Numero Agragado con exito",
+          })
+          .then(function(){
+            $('#ingresar').hide();
+            $('.modal-backdrop').hide();
           });
 
           // listaNegra.ajax.reload(null, false);

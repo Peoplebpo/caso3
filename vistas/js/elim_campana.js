@@ -6,7 +6,6 @@ $(document).ready(function() {
        nombre = $('#nombre1').val(); 	
        if(nombre==0){
         Swal.fire({
-          position: 'top',
           icon: 'error',
           title: 'Seleccione una opción'
         })
@@ -18,7 +17,6 @@ $(document).ready(function() {
          text: "Estos cambios no podrán ser revertidos",
          icon: 'warning',
          showCancelButton: true,
-         position: 'top',
          confirmButtonColor: '#3085d6',
          cancelButtonColor: '#d33',
          cancelButtonText: 'Cancelar',
@@ -34,10 +32,13 @@ $(document).ready(function() {
               success: function(a) {
                 console.log(a);
                 Swal.fire({
-                  position: 'top',
                   icon: 'success',
                   title: 'Campaña eliminada con exito'
                 })
+                .then(function(){
+                  $('#eliminarC').hide();
+                  $('.modal-backdrop').hide();
+                });
                 opcion=5
                 $.ajax({
                   url: "modelos/include/crud.php",

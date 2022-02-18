@@ -19,7 +19,7 @@
  
 
     <div class="modal" tabindex="-1" id="ingresar" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog">
+        <div class="modal-dialog modal-dialog-centered"">
                 <div class="modal-content">
                     <div class="modal-header" id="lm" style="font-family: geometria, sans-serif;">
                         <h5 class="modal-title">AGREGAR NUMERO</h5>
